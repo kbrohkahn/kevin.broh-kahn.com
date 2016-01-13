@@ -33,7 +33,7 @@
 	.right-triangle-span + span {right: 25px; bottom: 100px;}
 }
 
-@media screen and (max-width:  639px) {
+@media screen and (max-width: 639px) {
 	.left-triangle-span {border-right-width: 300px; border-top-width: 300px}
 	.right-triangle-span {border-left-width: 300px; border-bottom-width: 300px}
 
