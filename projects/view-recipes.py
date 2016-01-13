@@ -214,7 +214,7 @@ def getRecipeLabelHTML(index):
 #
 def displaySearch(searchString):
 	print("""
-<h1 class="large-margin-top">New Recipe Search</h1>
+<h2 class="large-margin-top">New Recipe Search</h2>
 <form role="form" method="post" action="view-recipes.py" id="recipe-search-form">
 	<ul id="ingredient-tabs" class="nav nav-tabs nav-justified" role="tablist">
 		<li role="presentation" class="active">
@@ -431,7 +431,7 @@ def displaySearchResults(searchString):
 	print("""
 <div class="row large-margin-top">
 	<div class="col-xs-12">
-		<h1>{0}</h1>
+		<h2>{0}</h2>
 		<div class="center">""").format(searchResultString)
 
 	# print included ingredients header string
@@ -478,9 +478,16 @@ def displaySearchResults(searchString):
 
 	# tell user to narrow search if over 1000 results
 	if count == 99:
-		print("<b>Too many recipes to process, please narrow search.</b>")
-
-
+		print("""
+<div class="panel panel-warning">
+	<div class="panel-heading">
+		<h3 class="panel-title">Please narrow search</h3>
+	</div>
+	<div class="panel-body">
+		The search results contain too many recipes to process (99+), please narrow search to view all results.
+	</div>
+</div>
+""")
 
 #
 # return recipe object loaded from database
@@ -551,7 +558,7 @@ def displayRecipe(recipe):
 	print("""
 <div class="row center">
 	<div class="col-xs-12">
-		<h1>{0}</h1>
+		<h2>{0}</h2>
 		{4}
 		<div>Servings: {1}</div>
 		<div>Calories per serving: {2}</div>
@@ -1094,6 +1101,14 @@ try:
 	with open("../templates/navbar.html", "r") as navbar:
 		print navbar.read()
 
+	# print header and link to github
+	print("""
+<style>body {background: #edf0f8;}</style>
+<h1>View Recipes</h1>
+<div class="subheader">Search for, filter, and transform recipes</div>
+<div class="center"><a target="blank" href="https://github.com/kbrohkahn/recipe-parser">View project on Github</a></div>
+""")
+	
 	try:
 		# TODO only use this when JSON file changes
 		#recreateDatabase()
@@ -1119,11 +1134,14 @@ try:
 		# if exists, display recipe form search results
 		displaySearchResults(searchPhrase)
 
-		print("""<div class="row">
-			<div class="col-xs-12 text-center">
-				All recipes parsed from <a href="http://allrecipes.com/">allrecipes.com</a>
-			</div>
-		</div>""")
+		# print notice of recipes and link to allrecipes.com
+		print("""
+<div class="row">
+	<div class="col-xs-12 text-center">
+		All recipes parsed from <a href="http://allrecipes.com/">allrecipes.com</a>
+	</div>
+</div>
+""")
 
 	except sqlite3.Error as e:
 		print("<b>Error %s:</b>" % e.args[0])

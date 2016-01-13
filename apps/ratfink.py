@@ -26,7 +26,7 @@ print("""
 </ul>
 
 <h2>Screenshots</h2>
-<ul class="nav nav-tabs" role="tablist">
+<ul class="nav nav-tabs nav-justified" role="tablist">
 	<li role="presentation" class="active">
 		<a href="#droid_maxx_screenshots" aria-controls="droid_maxx_screenshots" role="tab" data-toggle="tab">Droid Maxx</a>
 	</li>

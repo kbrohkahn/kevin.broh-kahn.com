@@ -1,10 +1,12 @@
-body {overflow: hidden;}
-#circuit-background {width: 100%}
-#circuit-background-cover { position: absolute; top: 50%; left: 50%; margin-left: -100px; margin-top: -100px; background: rgba(255, 255, 255, .9); height: 200px; width: 200px; border-radius: 100px}
+#circuit-background {width: 100%;background: linear-gradient(#b6c3e2, white); overflow: hidden; position: absolute; top: 0; left: 0; position: absolute; opacity: .8;}
+#circuit-background-cover {position: absolute; top: 50%; left: 50%; margin-left: -100px; margin-top: -100px; height: 200px; width: 200px; border-radius: 100px; z-index: 12; background: #fff; display: table;}
+#circuit-background-cover div {display: table-cell; vertical-align: middle;}
 #circuit-background-cover ul {padding: 0;}
 #circuit-background-cover li {list-style:none;}
 
-.path {position: absolute; overflow: hidden; background: transparent; z-index: -1;}
+#footer {position: absolute; bottom: 0; z-index: 13;}
+
+.path {position: absolute; overflow: hidden;}
 .vertical-path {border-top: solid 4px #2E4272; border-bottom: solid 4px #2E4272; width: 4px;}
 .vertical-path span {position: absolute;width: 4px; height: 100px;}
 .horizontal-path {border-left: solid 4px #2E4272; border-right: solid 4px #2E4272; height: 4px; }
@@ -16,37 +18,37 @@ body {overflow: hidden;}
 .moving-right { background: linear-gradient(90deg, rgba(0,0,0,0), #7887AB); border-right: solid 4px #7887AB; animation-name: animate-right; -webkit-animation-name: animate-right;}
 
 @keyframes animate-up {
-    0%  {bottom: -100px; }
-    100%{bottom: 100%; }
+	0%  {bottom: -100px; }
+	100%{bottom: 100%; }
 }
 @-webkit-keyframes animate-up {
-    0%  {bottom: -100px; }
-    100%{bottom: 100%; }
+	0%  {bottom: -100px; }
+	100%{bottom: 100%; }
 }
 
 @keyframes animate-down {
-    0%  {top: -100px; }
-    100%{top: 100%; }
+	0%  {top: -100px; }
+	100%{top: 100%; }
 }
 @-webkit-keyframes animate-down {
-    0%  {top: -100px; }
-    100%{top: 100%; }
+	0%  {top: -100px; }
+	100%{top: 100%; }
 }
 
 @keyframes animate-left {
-    0%  {right: -100px; }
-    100%{right: 100%; }
+	0%  {right: -100px; }
+	100%{right: 100%; }
 }
 @-webkit-keyframes animate-left {
-    0%  {right: -100px; }
-    100%{right: 100%; }
+	0%  {right: -100px; }
+	100%{right: 100%; }
 }
 
 @keyframes animate-right {
-    0%  {left: -100px; }
-    100%{left: 100%; }
+	0%  {left: -100px; }
+	100%{left: 100%; }
 }
 @-webkit-keyframes animate-right {
-    0%  {left: -100px; }
-    100%{left: 100%; }
+	0%  {left: -100px; }
+	100%{left: 100%; }
 }
