@@ -5,12 +5,14 @@ with open("../templates/navbar.html", "r") as navbar:
 	print navbar.read()
 
 print("""
-<h1>Prezcon</h1>
-<div class="subheader">The official application of the Prezcon Winter Nationals</div>
-<div class="badge-container">
-	<a target="blank" href="https://play.google.com/store/apps/details?id=com.prezcon.prezcon">
-		<img alt="Get it on Google Play" src="/assets/img/en_generic_rgb_wo_45.png" />
-	</a>
+<div class="row">
+	<div class="col-xs-6 col-xs-offset-3 col-sm-offset-0 col-sm-3 col-md-2 col-lg-1">
+		<img class="img-responsive" alt="Prezcon Icon" src="/assets/img/prezcon/icon.png">
+	</div>
+	<div class="col-xs-12 col-sm-9 col-md-10 col-lg-11">
+		<h1>Prezcon <small><a target="blank" href="https://play.google.com/store/apps/details?id=com.prezcon.prezcon">Google Play</a></small></h1>
+		<div class="subheader">The official application of the Prezcon Winter Nationals.</div>
+	</div>
 </div>
 <h2>Features</h2>
 <ul>

@@ -30,8 +30,6 @@ img {max-width: 100%;}
 .light-background {background: #edf0f8}
 .table>tbody>tr>td {vertical-align: middle;}
 .link-list a {display: block; padding: 8px 0;}
-h1 a small {color: #328A2E;}
-h1 a:hover {color: #328A2E;}
 
 /* input row and group fix */
 .input-row > div {margin-top: 15px;}
@@ -60,9 +58,9 @@ a:visited
 a:link {font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
 a,
 a:visited
-a:link {font-weight: bold;color: #162856;}
+a:link {font-weight: bold;color: #328A2E;}
 p {line-height: 1.4em; }
-.subheader {font-size: 1.6em; text-align: center; margin: 1em 0;}
+.subheader {font-size: 1.6em; margin: 1em 0;}
 
 /* Helpers */
 .center {text-align: center; margin: 0 auto;}
@@ -94,8 +92,6 @@ p {line-height: 1.4em; }
 .button-description p,
 .button-description h4 {margin: 0;}
 .button-description:after {display: table; content: ''; clear: both;}
-
-.music-home-header:before {content: url("/assets/img/music_home/icon.png");}
 
 .screenshot {width: 23%; margin: 1em 1% 2em; float: left;}
 .screenshot.landscape {width: 48%;}
@@ -133,28 +129,3 @@ p {line-height: 1.4em; }
 	h1 a { text-align: center; display: block }
 
 }
-
-/* view-recipes.py */
-
-.tab-pane .input-group,
-.tab-pane .radio-group {padding: 8px 0;}
-.tab-pane .radio-group {border-bottom: 1px solid #ccc}
-.tab-pane .radio-group label {margin-right: 10px;}
-
-label {margin-bottom: 0;color:rgba(85, 85, 85, .5);}
-
-input[type="radio"][value="on"]:checked ~ label,
-.filter-on {color:#449d44; font-weight: bold;}
-input[type="radio"][value="off"]:checked ~ label,
-.filter-off {color:#d9534f; font-weight: bold;}
-input[type="radio"][value=""]:checked ~ label,
-.filter-either {color:#555;}
-
-#ingredient-labels .filter-on:before {content: "Has to have ";}
-#recipe-labels .filter-on:before {content: "Has to be ";}
-
-#ingredient-labels .filter-off:before {content: "Cannot have ";}
-#recipe-labels .filter-off:before {content: "Cannot be ";}
-
-#ingredient-labels .filter-either:before {content: "May have ";}
-#recipe-labels .filter-either:before {content: "May be ";}

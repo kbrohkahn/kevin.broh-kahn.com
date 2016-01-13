@@ -1103,6 +1103,7 @@ try:
 
 	# print header and link to github
 	print("""
+<link href="/assets/css/view-recipes.css" rel="stylesheet">
 <style>body {background: #edf0f8;}</style>
 <h1>View Recipes</h1>
 <div class="subheader">Search for, filter, and transform recipes</div>

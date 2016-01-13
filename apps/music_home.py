@@ -5,18 +5,14 @@ with open("../templates/navbar.html", "r") as navbar:
 	print navbar.read()
 
 print("""
-
-<h1 class="music-home-header">Music Home</h1>
-
-<div class="subheader">Never be forced to power your screen on again</div>
-<div class="badge-container">
-
-	<a target="blank" class="apple-badge" href="https://itunes.apple.com/us/developer/kevin-broh-kahn/id1047274120#">
-		<img alt="Find in App Store" src="/assets/img/Download_on_the_App_Store_Badge_US-UK_135x40.svg">
-	</a>
-	<a target="blank" href="https://play.google.com/store/apps/details?id=com.acrilogic.musichome">
-		<img alt="Get it on Google Play" src="/assets/img/en_generic_rgb_wo_45.png" />
-	</a>
+<div class="row">
+	<div class="col-xs-6 col-xs-offset-3 col-sm-offset-0 col-sm-3 col-md-2 col-lg-1">
+		<img class="img-responsive" alt="Music Home Icon" src="/assets/img/music_home/icon.png">
+	</div>
+	<div class="col-xs-12 col-sm-9 col-md-10 col-lg-11">
+		<h1>Music Home <small><a target="blank" href="https://play.google.com/store/apps/details?id=com.acrilogic.musichome">Google Play</a> and <a target="blank" href="https://itunes.apple.com/us/developer/kevin-broh-kahn/id1047274120#">iTunes Store</a></small></h1>
+		<div class="subheader">Never be forced to power your screen on again.</div>
+	</div>
 </div>
 <h2>Description</h2>
 <p class="indented">Music Home is an app that allows you to easily and quickly control music from a variety of players. Through Music Home's lightweight screen saver and efficient home screen, your music will always be just a tap away. Hate having to unlock your phone to choose the next song? Don't want to fiddle for the power button to turn your screen on? Then Music Home is the perfect app for you!</p>
