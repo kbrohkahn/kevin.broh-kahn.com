@@ -62,230 +62,242 @@ print("""
 </ul>
 <div class="tab-content clearfix">
 	<div role="tabpanel" class="tab-pane active" id="droid_maxx_screenshots">
-		<div class="screenshot">
-			<img src="/assets/img/music_home/droid_maxx/home.png" alt="Home screen">
-			<div>
-				<em>Home screen</em>
+		<div class="row screenshots">
+			<div class="col-md-1 col-sm-2 col-xs-4">
+				<img src="/assets/img/music_home/droid_maxx/home.png" alt="Home screen">
+				<div>
+					<em>Home screen</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot">
-			<img src="/assets/img/music_home/droid_maxx/screensaver.png" alt="Screen saver">
-			<div>
-				<em>Screensaver</em>
+			<div class="col-md-1 col-sm-2 col-xs-4">
+				<img src="/assets/img/music_home/droid_maxx/screensaver.png" alt="Screen saver">
+				<div>
+					<em>Screensaver</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot">
-			<img src="/assets/img/music_home/droid_maxx/home_dark_theme.png" alt="Home screen dark">
-			<div>
-				<em>Home screen with dark theme</em>
+			<div class="col-md-1 col-sm-2 col-xs-4">
+				<img src="/assets/img/music_home/droid_maxx/home_dark_theme.png" alt="Home screen dark">
+				<div>
+					<em>Home screen with dark theme</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot">
-			<img src="/assets/img/music_home/droid_maxx/screensaver_dark_theme.png" alt="Home screen dark">
-			<div>
-				<em>Screensaver with dark theme</em>
+			<div class="col-md-1 col-sm-2 col-xs-4">
+				<img src="/assets/img/music_home/droid_maxx/screensaver_dark_theme.png" alt="Home screen dark">
+				<div>
+					<em>Screensaver with dark theme</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot landscape">
-			<img src="/assets/img/music_home/droid_maxx/home_landscape.png" alt="Home screen landscape">
-			<div>
-				<em>Home screen, landscape orientation</em>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<img src="/assets/img/music_home/droid_maxx/home_landscape.png" alt="Home screen landscape">
+				<div>
+					<em>Home screen, landscape orientation</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot landscape">
-			<img src="/assets/img/music_home/droid_maxx/home_dark_theme_landscape.png" alt="Home screen dark landscape">
-			<div>
-				<em>Home screen with dark theme, landscape orientation</em>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<img src="/assets/img/music_home/droid_maxx/home_dark_theme_landscape.png" alt="Home screen dark landscape">
+				<div>
+					<em>Home screen with dark theme, landscape orientation</em>
+				</div>
 			</div>
 		</div>
 	</div>
 	<div role="tabpanel" class="tab-pane" id="galaxy_tab_2_7_screenshots">
-		<div class="screenshot">
-			<img src="/assets/img/music_home/galaxy_tab_2_7.0/home.png" alt="Home screen">
-			<div>
-				<em>Home screen</em>
+		<div class="row screenshots">
+			<div class="col-md-1 col-sm-2 col-xs-4">
+				<img src="/assets/img/music_home/galaxy_tab_2_7.0/home.png" alt="Home screen">
+				<div>
+					<em>Home screen</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot">
-			<img src="/assets/img/music_home/galaxy_tab_2_7.0/screensaver.png" alt="Screen saver">
-			<div>
-				<em>Screensaver</em>
+			<div class="col-md-1 col-sm-2 col-xs-4">
+				<img src="/assets/img/music_home/galaxy_tab_2_7.0/screensaver.png" alt="Screen saver">
+				<div>
+					<em>Screensaver</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot">
-			<img src="/assets/img/music_home/galaxy_tab_2_7.0/home_dark_theme.png" alt="Home screen dark">
-			<div>
-				<em>Home screen with dark theme</em>
+			<div class="col-md-1 col-sm-2 col-xs-4">
+				<img src="/assets/img/music_home/galaxy_tab_2_7.0/home_dark_theme.png" alt="Home screen dark">
+				<div>
+					<em>Home screen with dark theme</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot">
-			<img src="/assets/img/music_home/galaxy_tab_2_7.0/screensaver_dark_theme.png" alt="Home screen dark">
-			<div>
-				<em>Screensaver with dark theme</em>
+			<div class="col-md-1 col-sm-2 col-xs-4">
+				<img src="/assets/img/music_home/galaxy_tab_2_7.0/screensaver_dark_theme.png" alt="Home screen dark">
+				<div>
+					<em>Screensaver with dark theme</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot landscape">
-			<img src="/assets/img/music_home/galaxy_tab_2_7.0/home_landscape.png" alt="Home screen landscape">
-			<div>
-				<em>Home screen, landscape orientation</em>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<img src="/assets/img/music_home/galaxy_tab_2_7.0/home_landscape.png" alt="Home screen landscape">
+				<div>
+					<em>Home screen, landscape orientation</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot landscape">
-			<img src="/assets/img/music_home/galaxy_tab_2_7.0/home_dark_theme_landscape.png" alt="Home screen dark landscape">
-			<div>
-				<em>Home screen with dark theme, landscape orientation</em>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<img src="/assets/img/music_home/galaxy_tab_2_7.0/home_dark_theme_landscape.png" alt="Home screen dark landscape">
+				<div>
+					<em>Home screen with dark theme, landscape orientation</em>
+				</div>
 			</div>
 		</div>
 	</div>
 	<div role="tabpanel" class="tab-pane" id="galaxy_tab_s_10_screenshots">
-		<div class="screenshot landscape">
-			<img src="/assets/img/music_home/galaxy_tab_s_10.5/home.png" alt="Home screen">
-			<div>
-				<em>Home screen</em>
+		<div class="row screenshots">
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<img src="/assets/img/music_home/galaxy_tab_s_10.5/home.png" alt="Home screen">
+				<div>
+					<em>Home screen</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot landscape">
-			<img src="/assets/img/music_home/galaxy_tab_s_10.5/screensaver.png" alt="Screen saver">
-			<div>
-				<em>Screensaver</em>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<img src="/assets/img/music_home/galaxy_tab_s_10.5/screensaver.png" alt="Screen saver">
+				<div>
+					<em>Screensaver</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot landscape">
-			<img src="/assets/img/music_home/galaxy_tab_s_10.5/home_dark_theme.png" alt="Home screen dark">
-			<div>
-				<em>Home screen with dark theme</em>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<img src="/assets/img/music_home/galaxy_tab_s_10.5/home_dark_theme.png" alt="Home screen dark">
+				<div>
+					<em>Home screen with dark theme</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot landscape">
-			<img src="/assets/img/music_home/galaxy_tab_s_10.5/screensaver_dark_theme.png" alt="Home screen dark">
-			<div>
-				<em>Screensaver with dark theme</em>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<img src="/assets/img/music_home/galaxy_tab_s_10.5/screensaver_dark_theme.png" alt="Home screen dark">
+				<div>
+					<em>Screensaver with dark theme</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot">
-			<img src="/assets/img/music_home/galaxy_tab_s_10.5/home_portrait.png" alt="Home screen portrait">
-			<div>
-				<em>Home screen, portrait orientation</em>
+			<div class="col-md-1 col-sm-2 col-xs-4">
+				<img src="/assets/img/music_home/galaxy_tab_s_10.5/home_portrait.png" alt="Home screen portrait">
+				<div>
+					<em>Home screen, portrait orientation</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot">
-			<img src="/assets/img/music_home/galaxy_tab_s_10.5/home_dark_theme_portrait.png" alt="Home screen dark portrait">
-			<div>
-				<em>Home screen with dark theme, portrait orientation</em>
+			<div class="col-md-1 col-sm-2 col-xs-4">
+				<img src="/assets/img/music_home/galaxy_tab_s_10.5/home_dark_theme_portrait.png" alt="Home screen dark portrait">
+				<div>
+					<em>Home screen with dark theme, portrait orientation</em>
+				</div>
 			</div>
 		</div>
 	</div>
 	<div role="tabpanel" class="tab-pane" id="iphone_6s_screenshots">
-		<div class="screenshot">
-			<img src="/assets/img/music_home/iphone_6s/home.png" alt="Home screen">
-			<div>
-				<em>Home screen</em>
+		<div class="row screenshots">
+			<div class="col-md-1 col-sm-2 col-xs-4">
+				<img src="/assets/img/music_home/iphone_6s/home.png" alt="Home screen">
+				<div>
+					<em>Home screen</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot">
-			<img src="/assets/img/music_home/iphone_6s/screensaver.png" alt="Screen saver">
-			<div>
-				<em>Screensaver</em>
+			<div class="col-md-1 col-sm-2 col-xs-4">
+				<img src="/assets/img/music_home/iphone_6s/screensaver.png" alt="Screen saver">
+				<div>
+					<em>Screensaver</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot">
-			<img src="/assets/img/music_home/iphone_6s/home_dark_theme.png" alt="Home screen dark">
-			<div>
-				<em>Home screen with dark theme</em>
+			<div class="col-md-1 col-sm-2 col-xs-4">
+				<img src="/assets/img/music_home/iphone_6s/home_dark_theme.png" alt="Home screen dark">
+				<div>
+					<em>Home screen with dark theme</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot">
-			<img src="/assets/img/music_home/iphone_6s/screensaver_dark_theme.png" alt="Home screen dark">
-			<div>
-				<em>Screensaver with dark theme</em>
+			<div class="col-md-1 col-sm-2 col-xs-4">
+				<img src="/assets/img/music_home/iphone_6s/screensaver_dark_theme.png" alt="Home screen dark">
+				<div>
+					<em>Screensaver with dark theme</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot landscape">
-			<img src="/assets/img/music_home/iphone_6s/home_landscape.png" alt="Home screen landscape">
-			<div>
-				<em>Home screen, landscape orientation</em>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<img src="/assets/img/music_home/iphone_6s/home_landscape.png" alt="Home screen landscape">
+				<div>
+					<em>Home screen, landscape orientation</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot landscape">
-			<img src="/assets/img/music_home/iphone_6s/home_dark_theme_landscape.png" alt="Home screen dark landscape">
-			<div>
-				<em>Home screen with dark theme, landscape orientation</em>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<img src="/assets/img/music_home/iphone_6s/home_dark_theme_landscape.png" alt="Home screen dark landscape">
+				<div>
+					<em>Home screen with dark theme, landscape orientation</em>
+				</div>
 			</div>
 		</div>
 	</div>
 	<div role="tabpanel" class="tab-pane" id="iphone_6s_plus_screenshots">
-		<div class="screenshot">
-			<img src="/assets/img/music_home/iphone_6s_plus/home.png" alt="Home screen">
-			<div>
-				<em>Home screen</em>
+		<div class="row screenshots">
+			<div class="col-md-1 col-sm-2 col-xs-4">
+				<img src="/assets/img/music_home/iphone_6s_plus/home.png" alt="Home screen">
+				<div>
+					<em>Home screen</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot">
-			<img src="/assets/img/music_home/iphone_6s_plus/screensaver.png" alt="Screen saver">
-			<div>
-				<em>Screensaver</em>
+			<div class="col-md-1 col-sm-2 col-xs-4">
+				<img src="/assets/img/music_home/iphone_6s_plus/screensaver.png" alt="Screen saver">
+				<div>
+					<em>Screensaver</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot">
-			<img src="/assets/img/music_home/iphone_6s_plus/home_dark_theme.png" alt="Home screen dark">
-			<div>
-				<em>Home screen with dark theme</em>
+			<div class="col-md-1 col-sm-2 col-xs-4">
+				<img src="/assets/img/music_home/iphone_6s_plus/home_dark_theme.png" alt="Home screen dark">
+				<div>
+					<em>Home screen with dark theme</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot">
-			<img src="/assets/img/music_home/iphone_6s_plus/screensaver_dark_theme.png" alt="Home screen dark">
-			<div>
-				<em>Screensaver with dark theme</em>
+			<div class="col-md-1 col-sm-2 col-xs-4">
+				<img src="/assets/img/music_home/iphone_6s_plus/screensaver_dark_theme.png" alt="Home screen dark">
+				<div>
+					<em>Screensaver with dark theme</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot landscape">
-			<img src="/assets/img/music_home/iphone_6s_plus/home_landscape.png" alt="Home screen landscape">
-			<div>
-				<em>Home screen, landscape orientation</em>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<img src="/assets/img/music_home/iphone_6s_plus/home_landscape.png" alt="Home screen landscape">
+				<div>
+					<em>Home screen, landscape orientation</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot landscape">
-			<img src="/assets/img/music_home/iphone_6s_plus/home_dark_theme_landscape.png" alt="Home screen dark landscape">
-			<div>
-				<em>Home screen with dark theme, landscape orientation</em>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<img src="/assets/img/music_home/iphone_6s_plus/home_dark_theme_landscape.png" alt="Home screen dark landscape">
+				<div>
+					<em>Home screen with dark theme, landscape orientation</em>
+				</div>
 			</div>
 		</div>
 	</div>
 	<div role="tabpanel" class="tab-pane" id="ipad_air_2_screenshots">
-		<div class="screenshot landscape">
-			<img src="/assets/img/music_home/ipad_air_2/home.png" alt="Home screen">
-			<div>
-				<em>Home screen</em>
+		<div class="row screenshots">
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<img src="/assets/img/music_home/ipad_air_2/home.png" alt="Home screen">
+				<div>
+					<em>Home screen</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot landscape">
-			<img src="/assets/img/music_home/ipad_air_2/screensaver.png" alt="Screen saver">
-			<div>
-				<em>Screensaver</em>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<img src="/assets/img/music_home/ipad_air_2/screensaver.png" alt="Screen saver">
+				<div>
+					<em>Screensaver</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot landscape">
-			<img src="/assets/img/music_home/ipad_air_2/home_dark_theme.png" alt="Home screen dark">
-			<div>
-				<em>Home screen with dark theme</em>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<img src="/assets/img/music_home/ipad_air_2/home_dark_theme.png" alt="Home screen dark">
+				<div>
+					<em>Home screen with dark theme</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot landscape">
-			<img src="/assets/img/music_home/ipad_air_2/screensaver_dark_theme.png" alt="Home screen dark">
-			<div>
-				<em>Screensaver with dark theme</em>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<img src="/assets/img/music_home/ipad_air_2/screensaver_dark_theme.png" alt="Home screen dark">
+				<div>
+					<em>Screensaver with dark theme</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot">
-			<img src="/assets/img/music_home/ipad_air_2/home_portrait.png" alt="Home screen portrait">
-			<div>
-				<em>Home screen, portrait orientation</em>
+			<div class="col-md-1 col-sm-2 col-xs-4">
+				<img src="/assets/img/music_home/ipad_air_2/home_portrait.png" alt="Home screen portrait">
+				<div>
+					<em>Home screen, portrait orientation</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot">
-			<img src="/assets/img/music_home/ipad_air_2/home_dark_theme_portrait.png" alt="Home screen dark portrait">
-			<div>
-				<em>Home screen with dark theme, portrait orientation</em>
+			<div class="col-md-1 col-sm-2 col-xs-4">
+				<img src="/assets/img/music_home/ipad_air_2/home_dark_theme_portrait.png" alt="Home screen dark portrait">
+				<div>
+					<em>Home screen with dark theme, portrait orientation</em>
+				</div>
 			</div>
 		</div>
 	</div>

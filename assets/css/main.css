@@ -71,7 +71,6 @@ p {line-height: 1.4em; }
 .clearfix:after {display: table; content: ''; clear: both;}
 .hidden {display: none;}
 
-
 /* Navbar */
 .navbar {background-color: #061539; border: none; z-index: 20}
 
@@ -105,9 +104,7 @@ p {line-height: 1.4em; }
 .button-description h4 {margin: 0;}
 .button-description:after {display: table; content: ''; clear: both;}
 
-.screenshot {width: 23%; margin: 1em 1% 2em; float: left;}
-.screenshot.landscape {width: 48%;}
-.screenshot * {text-align: center;}
+.screenshots img + div {text-align: center; height: 48px;}
 
 @media screen and (min-width: 768px) {
 	#header i {display: none;}
@@ -127,13 +124,9 @@ p {line-height: 1.4em; }
 	#nav { border-right: solid 1px #162856; height: 100%; width: 66.67%; position: fixed; left: -66.67%; top: 0;}
 	#nav ul li,
 	.nav-tabs ul li {display: block; border-bottom: solid 1px #162856;}
-
-	.screenshot {width: 48%;}
-	.screenshot.landscape {width: 98%;}
 }
 
 @media screen and (max-width: 640px) {
-	.screenshot {width: 98%;}
 }
 
 

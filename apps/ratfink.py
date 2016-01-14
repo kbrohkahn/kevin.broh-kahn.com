@@ -9,7 +9,7 @@ print("""
 	<div class="col-xxs-6 col-xxs-offset-3 col-xs-4 col-sm-3 col-md-2 col-lg-1">
 		<img class="img-responsive" alt="Ratfink Icon" src="/assets/img/ratfink/icon.png">
 	</div>
-	<div class="col-xxs-12 col-xs-8 col-sm-9 col-md-10 col-lg-11">
+	<div class="col-xxs-12 col-xs-6 col-sm-9 col-md-10 col-lg-11">
 		<h1>Ratfink <small><a target="blank" href="https://play.google.com/store/apps/details?id=com.play2think.ratfink">Google Play</a></small></h1>
 		<div class="subheader">A combination of poker and bridge that's easy to learn and fun to play.</div>
 	</div>
@@ -41,134 +41,140 @@ print("""
 </ul>
 <div class="tab-content clearfix">
 	<div role="tabpanel" class="tab-pane active" id="droid_maxx_screenshots">
-		<div class="screenshot">
-			<img src="/assets/img/ratfink/droid_maxx/playing.png" alt="Playing">
-			<div>
-				<em>Playing a trick</em>
+		<div class="row screenshots">
+			<div class="col-md-1 col-sm-2 col-xs-4">
+				<img src="/assets/img/ratfink/droid_maxx/playing.png" alt="Playing">
+				<div>
+					<em>Playing a trick</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot">
-			<img src="/assets/img/ratfink/droid_maxx/bidding.png" alt="Bidding">
-			<div>
-				<em>Bidding a round</em>
+			<div class="col-md-1 col-sm-2 col-xs-4">
+				<img src="/assets/img/ratfink/droid_maxx/bidding.png" alt="Bidding">
+				<div>
+					<em>Bidding a round</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot">
-			<img src="/assets/img/ratfink/droid_maxx/playing_theme_a.png" alt="Playing">
-			<div>
-				<em>Playing a trick</em>
+			<div class="col-md-1 col-sm-2 col-xs-4">
+				<img src="/assets/img/ratfink/droid_maxx/playing_theme_a.png" alt="Playing">
+				<div>
+					<em>Playing a trick</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot">
-			<img src="/assets/img/ratfink/droid_maxx/trick.png" alt="Trick">
-			<div>
-				<em>Trick summary</em>
+			<div class="col-md-1 col-sm-2 col-xs-4">
+				<img src="/assets/img/ratfink/droid_maxx/trick.png" alt="Trick">
+				<div>
+					<em>Trick summary</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot">
-			<img src="/assets/img/ratfink/droid_maxx/score.png" alt="Score">
-			<div>
-				<em>Round score summary</em>
+			<div class="col-md-1 col-sm-2 col-xs-4">
+				<img src="/assets/img/ratfink/droid_maxx/score.png" alt="Score">
+				<div>
+					<em>Round score summary</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot">
-			<img src="/assets/img/ratfink/droid_maxx/playing_theme_c_3p.png" alt="Playing, 3 players">
-			<div>
-				<em>Playing a trick with 3 players</em>
+			<div class="col-md-1 col-sm-2 col-xs-4">
+				<img src="/assets/img/ratfink/droid_maxx/playing_theme_c_3p.png" alt="Playing, 3 players">
+				<div>
+					<em>Playing a trick with 3 players</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot landscape">
-			<img src="/assets/img/ratfink/droid_maxx/playing_theme_b_2p_land.png" alt="Playing, 2 players">
-			<div>
-				<em>Playing a trick with 2 players in landscape</em>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<img src="/assets/img/ratfink/droid_maxx/playing_theme_b_2p_land.png" alt="Playing, 2 players">
+				<div>
+					<em>Playing a trick with 2 players in landscape</em>
+				</div>
 			</div>
 		</div>
 	</div>
 	<div role="tabpanel" class="tab-pane" id="galaxy_tab_2_7_screenshots">
-		<div class="screenshot">
-			<img src="/assets/img/ratfink/galaxy_tab_2_7.0/playing.png" alt="Playing">
-			<div>
-				<em>Playing a trick</em>
+		<div class="row screenshots">
+			<div class="col-md-1 col-sm-2 col-xs-4">
+				<img src="/assets/img/ratfink/galaxy_tab_2_7.0/playing.png" alt="Playing">
+				<div>
+					<em>Playing a trick</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot">
-			<img src="/assets/img/ratfink/galaxy_tab_2_7.0/bidding.png" alt="Bidding">
-			<div>
-				<em>Bidding a round</em>
+			<div class="col-md-1 col-sm-2 col-xs-4">
+				<img src="/assets/img/ratfink/galaxy_tab_2_7.0/bidding.png" alt="Bidding">
+				<div>
+					<em>Bidding a round</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot">
-			<img src="/assets/img/ratfink/galaxy_tab_2_7.0/playing_theme_a.png" alt="Playing">
-			<div>
-				<em>Playing a trick</em>
+			<div class="col-md-1 col-sm-2 col-xs-4">
+				<img src="/assets/img/ratfink/galaxy_tab_2_7.0/playing_theme_a.png" alt="Playing">
+				<div>
+					<em>Playing a trick</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot">
-			<img src="/assets/img/ratfink/galaxy_tab_2_7.0/trick.png" alt="Trick">
-			<div>
-				<em>Trick summary</em>
+			<div class="col-md-1 col-sm-2 col-xs-4">
+				<img src="/assets/img/ratfink/galaxy_tab_2_7.0/trick.png" alt="Trick">
+				<div>
+					<em>Trick summary</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot">
-			<img src="/assets/img/ratfink/galaxy_tab_2_7.0/score.png" alt="Score">
-			<div>
-				<em>Round score summary</em>
+			<div class="col-md-1 col-sm-2 col-xs-4">
+				<img src="/assets/img/ratfink/galaxy_tab_2_7.0/score.png" alt="Score">
+				<div>
+					<em>Round score summary</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot">
-			<img src="/assets/img/ratfink/galaxy_tab_2_7.0/playing_theme_b_3p.png" alt="Playing, 3 players">
-			<div>
-				<em>Playing a trick with 3 players</em>
+			<div class="col-md-1 col-sm-2 col-xs-4">
+				<img src="/assets/img/ratfink/galaxy_tab_2_7.0/playing_theme_b_3p.png" alt="Playing, 3 players">
+				<div>
+					<em>Playing a trick with 3 players</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot landscape">
-			<img src="/assets/img/ratfink/galaxy_tab_2_7.0/playing_theme_c_2p_land.png" alt="Playing, 2 players">
-			<div>
-				<em>Playing a trick with 2 players in landscape</em>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<img src="/assets/img/ratfink/galaxy_tab_2_7.0/playing_theme_c_2p_land.png" alt="Playing, 2 players">
+				<div>
+					<em>Playing a trick with 2 players in landscape</em>
+				</div>
 			</div>
 		</div>
 	</div>
 	<div role="tabpanel" class="tab-pane" id="galaxy_tab_s_10_screenshots">
-		<div class="screenshot landscape">
-			<img src="/assets/img/ratfink/galaxy_tab_s_10.0/playing.png" alt="Playing">
-			<div>
-				<em>Playing a trick</em>
+		<div class="row screenshots">
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<img src="/assets/img/ratfink/galaxy_tab_s_10.0/playing.png" alt="Playing">
+				<div>
+					<em>Playing a trick</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot landscape">
-			<img src="/assets/img/ratfink/galaxy_tab_s_10.0/bidding.png" alt="Bidding">
-			<div>
-				<em>Bidding a round</em>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<img src="/assets/img/ratfink/galaxy_tab_s_10.0/bidding.png" alt="Bidding">
+				<div>
+					<em>Bidding a round</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot landscape">
-			<img src="/assets/img/ratfink/galaxy_tab_s_10.0/playing_theme_a_3p.png" alt="Playing, 3 players">
-			<div>
-				<em>Playing a trick with 3 players</em>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<img src="/assets/img/ratfink/galaxy_tab_s_10.0/playing_theme_a_3p.png" alt="Playing, 3 players">
+				<div>
+					<em>Playing a trick with 3 players</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot landscape">
-			<img src="/assets/img/ratfink/galaxy_tab_s_10.0/trick.png" alt="Trick">
-			<div>
-				<em>Trick summary</em>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<img src="/assets/img/ratfink/galaxy_tab_s_10.0/trick.png" alt="Trick">
+				<div>
+					<em>Trick summary</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot landscape">
-			<img src="/assets/img/ratfink/galaxy_tab_s_10.0/score.png" alt="Score">
-			<div>
-				<em>Round score summary</em>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<img src="/assets/img/ratfink/galaxy_tab_s_10.0/score.png" alt="Score">
+				<div>
+					<em>Round score summary</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot landscape">
-			<img src="/assets/img/ratfink/galaxy_tab_s_10.0/playing_theme_b_2p.png" alt="Playing, 2 players">
-			<div>
-				<em>Playing a trick with 2 players</em>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<img src="/assets/img/ratfink/galaxy_tab_s_10.0/playing_theme_b_2p.png" alt="Playing, 2 players">
+				<div>
+					<em>Playing a trick with 2 players</em>
+				</div>
 			</div>
-		</div>
-		<div class="screenshot">
-			<img src="/assets/img/ratfink/galaxy_tab_s_10.0/playing_theme_c_port.png" alt="Playing">
-			<div>
-				<em>Playing a trick in landscape</em>
+			<div class="col-md-1 col-sm-2 col-xs-4">
+				<img src="/assets/img/ratfink/galaxy_tab_s_10.0/playing_theme_c_port.png" alt="Playing">
+				<div>
+					<em>Playing a trick in landscape</em>
+				</div>
 			</div>
 		</div>
 	</div>
