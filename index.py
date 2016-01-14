@@ -17,7 +17,7 @@ print("""
 			<li><a href="/apps/wbc"><img alt="WBC icon" class="small-icon" src="/assets/img/wbc/icon.png"><span>WBC</span></a></li>
 			<li><a href="/apps/prezcon"><img alt="Prezcon icon" class="small-icon" src="/assets/img/prezcon/icon.png"><span>Prezcon</span></a></li>
 		</ul>
-	</div>
+	</span>
 	<span class="home-span right-triangle-span"></span>
 	<span class="navigation-links">
 		<a href="/all-projects"><h4>Projects</h4></a>

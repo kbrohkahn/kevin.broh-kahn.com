@@ -4,9 +4,7 @@ var documentWidth=$(document).width();
 // set number of paths based on document size
 var count = documentHeight * documentWidth / 20000;
 
-// set div height to document height
-$("#circuit-background").css("height", documentHeight);
-
+// initialize first coordinates
 var lastX = Math.random() * documentWidth*1.5 - documentWidth/4
 var lastY = Math.random() * documentHeight*1.5 - documentHeight/4;
 var initialX = lastX;
