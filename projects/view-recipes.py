@@ -1106,10 +1106,10 @@ try:
 <link href="/assets/css/view-recipes.css" rel="stylesheet">
 <style>body {background: #edf0f8;}</style>
 <div class="row">
-	<div class="col-xs-6 col-xs-offset-3 col-sm-offset-0 col-sm-3 col-md-2 col-lg-1">
+	<div class="col-xxs-6 col-xxs-offset-3 col-xs-4 col-sm-3 col-md-2 col-lg-1">
 		<img class="img-responsive" alt="View Recipes Icon" src="/assets/img/view-recipes/icon.png">
 	</div>
-	<div class="col-xs-12 col-sm-9 col-md-10 col-lg-11">
+	<div class="col-xxs-12 col-xs-8 col-sm-9 col-md-10 col-lg-11">
 		<h1>View Recipes <small><a target="blank" href="https://github.com/kbrohkahn/recipe-parser">Github</a></small></h1>
 		<div class="subheader">Search for, filter, and transform recipes.</div>
 	</div>

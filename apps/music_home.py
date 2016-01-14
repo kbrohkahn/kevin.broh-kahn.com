@@ -6,10 +6,10 @@ with open("../templates/navbar.html", "r") as navbar:
 
 print("""
 <div class="row">
-	<div class="col-xs-6 col-xs-offset-3 col-sm-offset-0 col-sm-3 col-md-2 col-lg-1">
+	<div class="col-xxs-6 col-xxs-offset-3 col-xs-4 col-sm-3 col-md-2 col-lg-1">
 		<img class="img-responsive" alt="Music Home Icon" src="/assets/img/music_home/icon.png">
 	</div>
-	<div class="col-xs-12 col-sm-9 col-md-10 col-lg-11">
+	<div class="col-xxs-12 col-xs-8 col-sm-9 col-md-10 col-lg-11">
 		<h1>Music Home <small><a target="blank" href="https://play.google.com/store/apps/details?id=com.acrilogic.musichome">Google Play</a> and <a target="blank" href="https://itunes.apple.com/us/developer/kevin-broh-kahn/id1047274120#">iTunes Store</a></small></h1>
 		<div class="subheader">Never be forced to power your screen on again.</div>
 	</div>
