@@ -1,5 +1,5 @@
 #circuit-background {width: 100%;background: linear-gradient(#b6c3e2, white); overflow: hidden; position: absolute; top: 0; left: 0; position: absolute; opacity: .8;}
-#circuit-background-cover {position: absolute; top: 50%; left: 50%; margin-left: -100px; margin-top: -100px; height: 200px; width: 200px; border-radius: 100px; z-index: 12; background: #fff; display: table;}
+#circuit-background-cover {position: absolute; top: 50%; left: 50%; margin-left: -125px; margin-top: -125px; height: 250px; width: 250px; border-radius: 125px; z-index: 12; background: #fff; display: table;}
 #circuit-background-cover div {display: table-cell; vertical-align: middle;}
 #circuit-background-cover ul {padding: 0;}
 #circuit-background-cover li {list-style:none;}

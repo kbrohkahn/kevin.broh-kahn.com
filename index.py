@@ -9,9 +9,9 @@ print('<link href="/assets/css/index.css" rel="stylesheet">')
 print("""
 <div id="circuit-background">
 	<span class="home-span left-triangle-span"></span>
-	<span id="">
+	<span class="navigation-links">
 		<a href="/all-apps"><h4>Apps</h4></a>
-		<ul class="link-list">
+		<ul>
 			<li><a href="/apps/ratfink">Ratfink</a></li>
 			<li><a href="/apps/music_home">Music Home</a></li>
 			<li><a href="/apps/wbc">WBC</a></li>
@@ -19,9 +19,9 @@ print("""
 		</ul>
 	</div>
 	<span class="home-span right-triangle-span"></span>
-	<span id="">
+	<span class="navigation-links">
 		<a href="/all-projects"><h4>Projects</h4></a>
-		<ul class="link-list">
+		<ul>
 			<li><a href="/projects/view-recipes">View Recipes</a></li>
 			<li><a href="/projects/website">This website</a></li>
 		</ul>

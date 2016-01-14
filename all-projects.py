@@ -10,12 +10,13 @@ print('<link href="/assets/css/circuit-background.css" rel="stylesheet">')
 print("""
 <div id="circuit-background">
 	<div id="circuit-background-cover">
-		<div class="center">
-			<h4>Projects</h4>
-			<ul class="link-list">
+		<div class="center navigation-links">
+			<a href="/all-projects"><h4>Projects</h4></a>
+			<ul>
 				<li><a href="/projects/view-recipes">View Recipes</a></li>
 				<li><a href="/projects/website">This website</a></li>
 			</ul>
+
 		</div>
 	</div>
 </div>

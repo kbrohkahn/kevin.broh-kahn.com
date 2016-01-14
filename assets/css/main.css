@@ -29,7 +29,6 @@ img {max-width: 100%;}
 .large-margin-top {margin-top: 75px;}
 .light-background {background: #edf0f8}
 .table>tbody>tr>td {vertical-align: middle;}
-.link-list a {display: block; padding: 8px 0;}
 
 /* input row and group fix */
 .input-row > div {margin-top: 15px;}
@@ -58,7 +57,8 @@ a:visited
 a:link {font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
 a,
 a:visited
-a:link {font-weight: bold;color: #328A2E;}
+a:link {font-weight: bold; color: #328A2E;}
+
 p {line-height: 1.4em; }
 .subheader {font-size: 1.6em; margin: 1em 0;}
 
@@ -69,10 +69,18 @@ p {line-height: 1.4em; }
 .indented {text-indent: 32px;}
 .clearfix:after {display: table; content: ''; clear: both;}
 .hidden {display: none;}
-.thumbnail {height: 16px; width: 16px;}
+.small-icon {height: 32px; width: 32px; margin: 4px 8px;}
 
 /* Navbar */
 .navbar {background-color: #061539; border: none; z-index: 20}
+
+/* Navigation links (for index.py pages) */
+.navigation-links ul {width: 150px; margin: 0 auto;}
+.navigation-links li {display: block;}
+.navigation-links li a {padding: 8px 0;}
+.navigation-links li a,
+.navigation-links li a:visited
+.navigation-links li a:link {color: #2E4272;}
 
 /* Footer */
 #footer {width: 100%; text-align: center; margin: 0 auto; padding: 3em 0 1em;}
