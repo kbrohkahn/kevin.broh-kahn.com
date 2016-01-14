@@ -5,16 +5,14 @@
 .home-span + span {position: absolute; z-index: 12;}
 .home-span + span ul {list-style: none; padding-left: 0;}
 .left-triangle-span {left: 0; top: 0; border-right-color: transparent; border-top-color: #fff; border-left: none; border-bottom: none;}
-.left-triangle-span + span {text-align: left}
 .right-triangle-span {right: 0; bottom: 0; border-left-color: transparent; border-bottom-color: #b6c3e2; border-right: none; border-top: none; }
-.right-triangle-span + span {text-align: right}
 
 @media screen and (min-width: 1024px) {
 	.left-triangle-span {border-right-width: 600px; border-top-width: 600px}
 	.right-triangle-span {border-left-width: 600px; border-bottom-width: 600px}
 
 	.left-triangle-span + span { left: 100px; top: 100px; }
-	.right-triangle-span + span {right: 100px; bottom: 150px; }
+	.right-triangle-span + span {right: 100px; bottom: 175px; }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -22,7 +20,7 @@
 	.right-triangle-span {border-left-width: 500px; border-bottom-width: 500px}
 
 	.left-triangle-span + span {left: 50px; top: 75px;}
-	.right-triangle-span + span {right: 50px; bottom: 125px;}
+	.right-triangle-span + span {right: 50px; bottom: 150px;}
 }
 
 @media screen and (min-width: 640px) and (max-width: 767px) {
@@ -30,13 +28,16 @@
 	.right-triangle-span {border-left-width: 400px; border-bottom-width: 400px}
 
 	.left-triangle-span + span {left: 25px; top: 50px;}
-	.right-triangle-span + span {right: 25px; bottom: 100px;}
+	.right-triangle-span + span {right: 25px; bottom: 125px;}
 }
 
 @media screen and (max-width: 639px) {
-	.left-triangle-span {border-right-width: 300px; border-top-width: 300px}
-	.right-triangle-span {border-left-width: 300px; border-bottom-width: 300px}
+	/*#headshot {height: 150px; width: 150px; margin-left: -75px; margin-top: -75px; }*/
+
+
+	.left-triangle-span {border-right-width: 400px; border-top-width: 400px}
+	.right-triangle-span {border-left-width: 400px; border-bottom-width: 400px}
 
 	.left-triangle-span + span {left: 10px; top: 25px;}
-	.right-triangle-span + span {right: 10px; bottom: 75px;}
+	.right-triangle-span + span {right: 10px; bottom: 125px;}
 }

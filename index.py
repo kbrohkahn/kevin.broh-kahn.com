@@ -12,18 +12,18 @@ print("""
 	<span class="navigation-links">
 		<a href="/all-apps"><h4>Apps</h4></a>
 		<ul>
-			<li><a href="/apps/ratfink">Ratfink</a></li>
-			<li><a href="/apps/music_home">Music Home</a></li>
-			<li><a href="/apps/wbc">WBC</a></li>
-			<li><a href="/apps/prezcon">Prezcon</a></li>
+			<li><a href="/apps/ratfink"><img alt="Ratfink icon" class="small-icon" src="/assets/img/ratfink/icon.png"><span>Ratfink</span></a></li>
+			<li><a href="/apps/music_home"><img alt="Music Home icon" class="small-icon" src="/assets/img/music_home/icon.png"><span>Music Home</span></a></li>
+			<li><a href="/apps/wbc"><img alt="WBC icon" class="small-icon" src="/assets/img/wbc/icon.png"><span>WBC</span></a></li>
+			<li><a href="/apps/prezcon"><img alt="Prezcon icon" class="small-icon" src="/assets/img/prezcon/icon.png"><span>Prezcon</span></a></li>
 		</ul>
 	</div>
 	<span class="home-span right-triangle-span"></span>
 	<span class="navigation-links">
 		<a href="/all-projects"><h4>Projects</h4></a>
 		<ul>
-			<li><a href="/projects/view-recipes">View Recipes</a></li>
-			<li><a href="/projects/website">This website</a></li>
+			<li><a href="/projects/view-recipes"><img alt="View Recipes icon" class="small-icon" src="/assets/img/view-recipes/icon.png"><span>View Recipes</span></a></li>
+			<li><a href="/projects/website"><img alt="This website icon" class="small-icon" src="/assets/img/kevinbrohkahn.com/icon.png"><span>This website</span></a></li>
 		</ul>
 	</span>
 	<img id="headshot" class="img-circle" alt="My photo" src="/assets/img/headshot1.png">

@@ -13,10 +13,9 @@ print("""
 		<div class="center navigation-links">
 			<a href="/all-projects"><h4>Projects</h4></a>
 			<ul>
-				<li><a href="/projects/view-recipes">View Recipes</a></li>
-				<li><a href="/projects/website">This website</a></li>
+				<li><a href="/projects/view-recipes"><img alt="View Recipes icon" class="small-icon" src="/assets/img/view-recipes/icon.png"><span>View Recipes</span></a></li>
+				<li><a href="/projects/website"><img alt="This website icon" class="small-icon" src="/assets/img/kevinbrohkahn.com/icon.png"><span>This website</span></a></li>
 			</ul>
-
 		</div>
 	</div>
 </div>

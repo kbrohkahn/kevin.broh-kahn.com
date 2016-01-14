@@ -61,6 +61,7 @@ a:link {font-weight: bold; color: #328A2E;}
 
 p {line-height: 1.4em; }
 .subheader {font-size: 1.6em; margin: 1em 0;}
+h1 {margin-top: 0;}
 
 /* Helpers */
 .center {text-align: center; margin: 0 auto;}
@@ -69,18 +70,21 @@ p {line-height: 1.4em; }
 .indented {text-indent: 32px;}
 .clearfix:after {display: table; content: ''; clear: both;}
 .hidden {display: none;}
-.small-icon {height: 32px; width: 32px; margin: 4px 8px;}
+
 
 /* Navbar */
 .navbar {background-color: #061539; border: none; z-index: 20}
 
 /* Navigation links (for index.py pages) */
-.navigation-links ul {width: 150px; margin: 0 auto;}
+.navigation-links ul {width: 130px; margin: 0 auto;}
 .navigation-links li {display: block;}
-.navigation-links li a {padding: 8px 0;}
+.navigation-links li a {display: table; margin: 4px 0;}
+.navigation-links li a span {display: table-cell; line-height: 32px;}
 .navigation-links li a,
 .navigation-links li a:visited
 .navigation-links li a:link {color: #2E4272;}
+
+.small-icon {height: 32px; width: 32px; margin-right: 4px;}
 
 /* Footer */
 #footer {width: 100%; text-align: center; margin: 0 auto; padding: 3em 0 1em;}
@@ -134,6 +138,7 @@ p {line-height: 1.4em; }
 	#footer ul li {display: block; margin: 1em 0;}
 	
 	h1,
-	h1 a { text-align: center; display: block }
+	h1 a,
+	.subheader { text-align: center; display: block }
 
 }

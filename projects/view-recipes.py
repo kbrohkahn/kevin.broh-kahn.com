@@ -1105,9 +1105,15 @@ try:
 	print("""
 <link href="/assets/css/view-recipes.css" rel="stylesheet">
 <style>body {background: #edf0f8;}</style>
-<h1>View Recipes</h1>
-<div class="subheader">Search for, filter, and transform recipes</div>
-<div class="center"><a target="blank" href="https://github.com/kbrohkahn/recipe-parser">View project on Github</a></div>
+<div class="row">
+	<div class="col-xs-6 col-xs-offset-3 col-sm-offset-0 col-sm-3 col-md-2 col-lg-1">
+		<img class="img-responsive" alt="View Recipes Icon" src="/assets/img/view-recipes/icon.png">
+	</div>
+	<div class="col-xs-12 col-sm-9 col-md-10 col-lg-11">
+		<h1>View Recipes <small><a target="blank" href="https://github.com/kbrohkahn/recipe-parser">Github</a></small></h1>
+		<div class="subheader">Search for, filter, and transform recipes.</div>
+	</div>
+</div>
 """)
 	
 	try:
