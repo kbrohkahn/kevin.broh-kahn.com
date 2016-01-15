@@ -74,7 +74,8 @@ p {line-height: 1.4em; }
 .navbar {background-color: #061539; border: none; z-index: 20}
 
 /* Navigation links (for index.py pages) */
-.navigation-links ul {width: 130px; margin: 0 auto;}
+.navigation-links h4 {margin-top: 0}
+.navigation-links ul {display: table; margin: 0 auto;}
 .navigation-links li {display: block;}
 .navigation-links li a {display: table; margin: 4px 0;}
 .navigation-links li a.no-icon {text-align: center; margin: 4px auto; }
@@ -85,12 +86,16 @@ p {line-height: 1.4em; }
 
 .small-icon {height: 32px; width: 32px; margin-right: 4px;}
 
+/* Social links */
+.social-links li {margin-top: 8px; display: inline-block;}
+.social-links li a { margin: 0 4px;}
+
 /* Footer */
 #footer {width: 100%; text-align: center; margin: 0 auto; padding: 3em 0 1em;}
-#footer a {font-size: 1em; margin: 1em;}
 #footer p {font-size: .8em}
-#footer ul {margin: 3em 0; list-style: none; padding: 0; display: inline-block;}
+#footer ul {margin: 0 0 1em; list-style: none; padding: 0; display: inline-block;}
 #footer ul li {display: table-cell;}
+#footer ul li a {font-size: .8em; margin: 1em; text-align: center;}
 
 /* Home page */
 .badge-container {text-align: center; font-size: 0; margin: 1em 0;}
@@ -131,8 +136,6 @@ p {line-height: 1.4em; }
 
 
 @media screen and (max-width: 480px) {
-	#footer ul li {display: block; margin: 1em 0;}
-	
 	h1,
 	h1 a,
 	.subheader {text-align: center; display: block}
