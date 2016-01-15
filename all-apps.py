@@ -11,7 +11,7 @@ print("""
 <div id="circuit-background">
 	<div id="circuit-background-cover">
 		<div class="navigation-links">
-			<a class="center" href="/all-apps"><h4>Apps</h4></a>
+			<h4 class="center">Apps</h4>
 			<ul>
 				<li><a href="/apps/ratfink"><img alt="Ratfink icon" class="small-icon" src="/assets/img/ratfink/icon.png"><span>Ratfink</span></a></li>
 				<li><a href="/apps/music_home"><img alt="Music Home icon" class="small-icon" src="/assets/img/music_home/icon.png"><span>Music Home</span></a></li>

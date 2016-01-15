@@ -10,8 +10,8 @@ print('<link href="/assets/css/circuit-background.css" rel="stylesheet">')
 print("""
 <div id="circuit-background">
 	<div id="circuit-background-cover">
-		<div class="center navigation-links">
-			<a href="/all-projects"><h4>Projects</h4></a>
+		<div class="navigation-links">
+			<h4 class="center">Projects</h4>
 			<ul>
 				<li><a href="/projects/view-recipes"><img alt="View Recipes icon" class="small-icon" src="/assets/img/view-recipes/icon.png"><span>View Recipes</span></a></li>
 				<li><a href="/projects/website"><img alt="This website icon" class="small-icon" src="/assets/img/kevinbrohkahn.com/icon.png"><span>This website</span></a></li>

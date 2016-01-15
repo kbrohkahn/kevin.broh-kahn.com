@@ -329,7 +329,7 @@ print("""
 	<img src="/assets/img/music_home/previous_button.png" alt="Previous icon">
 	<div>
 		<h4>Previous Track</h4>
-		<p>Timing varies with each player. If playback of current song is within first few seconds, skips to the previous track in the queue. Otherwise, skips to the beginning of the current track.</p>
+		<p>If playback of current song is within first few seconds, skips to the previous track in the queue. Otherwise, skips to the beginning of the current track. Timing varies with each player.</p>
 	</div>
 </div>
 <div class="button-description">
