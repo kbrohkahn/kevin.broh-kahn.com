@@ -15,8 +15,7 @@ print("""
 	</div>
 </div>
 <h2>Description</h2>
-<p class="indented">This is the official app of the World Boardgaming Championships, the largest event presented by the Boardgame Players Association (BPA). From August 3-9, 2015, join us at the Lancaster Host Resort in Lancaster, PA, USA for a week of various board game tournaments, auctions, and vending. Board gamers, players, collectors, and game enthusiasts of all ages and experience levels are welcome. Visit <a target="blank" href="http://boardgamers.org/landing.shtml">the WBC web site at</a> for more info.</p>
-<p class="indented">***Note: please allow for automatic updating as convention event schedule is subject to change***</p>
+<p class="indented">This is the official app of the World Boardgaming Championships, the largest event presented by the Boardgame Players Association (BPA). From August 3-9, 2015, join us at the Lancaster Host Resort in Lancaster, PA, USA for a week of various board game tournaments, auctions, and vending. Board gamers, players, collectors, and game enthusiasts of all ages and experience levels are welcome. Visit <a target="blank" href="http://boardgamers.org/landing.shtml">the WBC web site</a> for more info.</p>
 <h2>Features</h2>
 	<ul>
 	<li>Offline storage of schedule (app does not require internet connection after download)</li>

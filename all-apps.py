@@ -10,7 +10,7 @@ print('<link href="/assets/css/circuit-background.css" rel="stylesheet">')
 print("""
 <div id="circuit-background">
 	<div id="circuit-background-cover">
-		<div class="navigation-links"">
+		<div class="navigation-links">
 			<a class="center" href="/all-apps"><h4>Apps</h4></a>
 			<ul>
 				<li><a href="/apps/ratfink"><img alt="Ratfink icon" class="small-icon" src="/assets/img/ratfink/icon.png"><span>Ratfink</span></a></li>
