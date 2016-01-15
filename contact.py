@@ -13,10 +13,10 @@ print("""
 		<div class="navigation-links">
 			<h4 class="center">Get in Touch</h4>
 			<ul class="social-links">
-				<li><a title="View my GitHub Profile" href="https://github.com/kbrohkahn"><img src="/assets/img/social/GitHub-Icon.png"></a></li>
-				<li><a title="View my LinkedIn" href="https://www.linkedin.com/in/kbrohkahn"><img src="/assets/img/social/LinkedIn-Icon.png"></a></li>
-				<li><a title="View my apps on the Google Play Store" href="https://play.google.com/store/apps/dev?id=4654453048954028942"><img src="/assets/img/social/Google-Play-Store-Icon.png"></a></li>
-				<li><a title="View my apps on the App Store" href="https://itunes.apple.com/us/developer/kevin-broh-kahn/id1047274120"><img src="/assets/img/social/App-Store-Icon.png"></a></li>
+				<li><a title="View my GitHub Profile" href="https://github.com/kbrohkahn" target="blank"><img src="/assets/img/social/GitHub-Icon.png"></a></li>
+				<li><a title="View my LinkedIn" href="https://www.linkedin.com/in/kbrohkahn" target="blank"><img src="/assets/img/social/LinkedIn-Icon.png"></a></li>
+				<li><a title="View my apps on the Google Play Store" href="https://play.google.com/store/apps/dev?id=4654453048954028942" target="blank"><img src="/assets/img/social/Google-Play-Store-Icon.png"></a></li>
+				<li><a title="View my apps on the App Store" href="https://itunes.apple.com/us/developer/kevin-broh-kahn/id1047274120" target="blank"><img src="/assets/img/social/App-Store-Icon.png"></a></li>
 			</ul>
 			<ul>
 				<li><a class="no-icon" href="mailto:kbrohkahn@yahoo.com"><span>Email me</span></a></li>
