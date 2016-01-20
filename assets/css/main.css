@@ -50,12 +50,14 @@ em,
 strong,
 #subtitle,
 a,
-a:visited
+a:visited,
 a:link {font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
 a,
-a:visited
+a:visited,
 a:link,
 a h4 {font-weight: bold; color: #328A2E;}
+a:hover,
+a h4:hover {color: #034500;}
 
 /* Font Styles */
 h1 {margin-top: 0;}
