@@ -28,7 +28,7 @@ print("""
 			<li>Amazon Prime Music</li>
 			<li>Poweramp</li>
 			<li>Samsung Music Player</li>
-			<li>Any music app! <em>(<a href="mailto:kbrohkahn@yahoo.com">email me</a> to make a request)</em></li>
+			<li>Any music app! <em>(<a href="mailto:kevin@broh-kahn.com">email me</a> to make a request)</em></li>
 		</ul>
 	</li>
 	<li>Screen saver that keeps screen on in low power setting without locking device</li>

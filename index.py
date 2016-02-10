@@ -23,7 +23,7 @@ print("""
 		<a href="/projects"><h4>Projects</h4></a>
 		<ul>
 			<li><a href="/projects/view-recipes"><img alt="View Recipes icon" class="small-icon" src="/assets/img/view-recipes/icon.png"><span>View Recipes</span></a></li>
-			<li><a href="/projects/website"><img alt="This website icon" class="small-icon" src="/assets/img/kevinbrohkahn.com/icon.png"><span>This website</span></a></li>
+			<li><a href="/projects/website"><img alt="This website icon" class="small-icon" src="/assets/img/kevin.broh-kahn.com/icon.png"><span>This website</span></a></li>
 		</ul>
 	</span>
 	<img id="headshot" class="img-circle" alt="My photo" src="/assets/img/headshot1.png">

@@ -20,7 +20,7 @@ print("""
 				<li><a title="View my apps on the App Store" href="https://itunes.apple.com/us/developer/kevin-broh-kahn/id1047274120" target="blank"><img src="/assets/img/social/App-Store-Icon.png"></a></li>
 			</ul>
 			<ul>
-				<li><a class="no-icon" href="mailto:kbrohkahn@yahoo.com"><span>Send me an email</span></a></li>
+				<li><a class="no-icon" href="mailto:kevin@broh-kahn.com"><span>Send me an email</span></a></li>
 				<li><a class="no-icon" href="tel:410-487-4041"><span>Give me a call</span></a></li>
 			</ul>
 		</div>

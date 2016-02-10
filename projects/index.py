@@ -14,7 +14,7 @@ print("""
 			<h4 class="center">Projects</h4>
 			<ul>
 				<li><a href="view-recipes"><img alt="View Recipes icon" class="small-icon" src="/assets/img/view-recipes/icon.png"><span>View Recipes</span></a></li>
-				<li><a href="website"><img alt="This website icon" class="small-icon" src="/assets/img/kevinbrohkahn.com/icon.png"><span>This website</span></a></li>
+				<li><a href="website"><img alt="This website icon" class="small-icon" src="/assets/img/kevin.broh-kahn.com/icon.png"><span>This website</span></a></li>
 			</ul>
 		</div>
 	</div>
