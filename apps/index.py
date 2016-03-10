@@ -17,6 +17,7 @@ print("""
 				<li><a href="music_home"><img alt="Music Home icon" class="small-icon" src="/assets/img/music_home/icon.png"><span>Music Home</span></a></li>
 				<li><a href="wbc"><img alt="WBC icon" class="small-icon" src="/assets/img/wbc/icon.png"><span>WBC</span></a></li>
 				<li><a href="prezcon"><img alt="Prezcon icon" class="small-icon" src="/assets/img/prezcon/icon.png"><span>Prezcon</span></a></li>
+				<li><a href="charging_wear"><img alt="Charging Wear icon" class="small-icon" src="/assets/img/charging_wear/icon.png"><span>Charging Wear</span></a></li>
 			</ul>
 		</div>
 	</div>
