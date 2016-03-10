@@ -2,6 +2,8 @@
 
 with open("templates/header.html", "r") as header:
 	print header.read()
+with open("templates/navbar.html", "r") as navbar:
+	print navbar.read()
 
 print('<link href="/assets/css/circuit-background.css" rel="stylesheet">')
 print('<link href="/assets/css/index.css" rel="stylesheet">')
@@ -14,9 +16,9 @@ print("""
 		<ul>
 			<li><a href="/apps/ratfink"><img alt="Ratfink icon" class="small-icon" src="/assets/img/ratfink/icon.png"><span>Ratfink</span></a></li>
 			<li><a href="/apps/music_home"><img alt="Music Home icon" class="small-icon" src="/assets/img/music_home/icon.png"><span>Music Home</span></a></li>
-			<li><a href="/apps/wbc"><img alt="WBC icon" class="small-icon" src="/assets/img/wbc/icon.png"><span>WBC</span></a></li>
-			<li><a href="/apps/prezcon"><img alt="Prezcon icon" class="small-icon" src="/assets/img/prezcon/icon.png"><span>Prezcon</span></a></li>
 			<li><a href="/apps/charging_wear"><img alt="Charging Wear icon" class="small-icon" src="/assets/img/charging_wear/icon.png"><span>Charging Wear</span></a></li>
+			<li><a href="/apps/prezcon"><img alt="Prezcon icon" class="small-icon" src="/assets/img/prezcon/icon.png"><span>Prezcon</span></a></li>
+			<li><a href="/apps/wbc"><img alt="WBC icon" class="small-icon" src="/assets/img/wbc/icon.png"><span>WBC</span></a></li>
 		</ul>
 	</span>
 	<span class="home-span right-triangle-span"></span>
@@ -27,11 +29,15 @@ print("""
 			<li><a href="/projects/website"><img alt="This website icon" class="small-icon" src="/assets/img/kevin.broh-kahn.com/icon.png"><span>This website</span></a></li>
 		</ul>
 	</span>
-	<img id="headshot" class="img-circle" alt="My photo" src="/assets/img/headshot1.png">
+	<a href="/contact" id="headshot">
+		<img class="img-circle" alt="My photo" src="/assets/img/headshot1.png">
+		<div>Get in touch</div>
+	</a>
 </div>
 """)
 
 print('<script src="/assets/js/circuit-background-script.js" type="text/javascript"></script>')
+print('<script src="/assets/js/index.js" type="text/javascript"></script>')
 
 with open("templates/footer.html", "r") as footer:
 	print footer.read()
