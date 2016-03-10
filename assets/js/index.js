@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$("#headshot").mouseenter(function () {
 		$("#headshot div").animate({
-			opacity: 0.5
+			opacity: 0.75
 		}, 250);
 	});
 
