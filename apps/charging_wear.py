@@ -10,7 +10,7 @@ print("""
 		<img class="img-responsive" alt="Charging Wear Icon" src="/assets/img/charging_wear/icon.png">
 	</div>
 	<div class="col-xxs-12 col-xs-6 col-sm-9 col-md-10 col-lg-11">
-		<h1>Charging Wear <small><a target="blank" href="https://play.google.com/store/apps/details?id=com.bkmobiledevelopment.chargingwear">Google Play</a></small></h1>
+		<h1>Charging Wear <small><a target="_blank" href="https://play.google.com/store/apps/details?id=com.bkmobiledevelopment.chargingwear">Google Play</a></small></h1>
 		<div class="subheader">Control what your Android Wear smartwatch does while it's charging.</div>
 	</div>
 </div>
@@ -49,7 +49,7 @@ print("""
 
 <h2>Download Charging Wear for free</h2>
 <div class="badge-container">
-	<a target="blank" href="https://play.google.com/store/apps/details?id=com.bkmobiledevelopment.chargingwear">
+	<a target="_blank" href="https://play.google.com/store/apps/details?id=com.bkmobiledevelopment.chargingwear">
 		<img alt="Get it on Google Play" src="/assets/img/en_generic_rgb_wo_45.png" />
 	</a>
 </div>

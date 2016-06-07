@@ -10,7 +10,7 @@ print("""
 		<img class="img-responsive" alt="Music Home Icon" src="/assets/img/music_home/icon.png">
 	</div>
 	<div class="col-xxs-12 col-xs-8 col-sm-9 col-md-10 col-lg-11">
-		<h1>Music Home <small><a target="blank" href="https://play.google.com/store/apps/details?id=com.acrilogic.musichome">Google Play</a> and <a target="blank" href="https://itunes.apple.com/us/developer/kevin-broh-kahn/id1047274120#">iTunes Store</a></small></h1>
+		<h1>Music Home <small><a target="_blank" href="https://play.google.com/store/apps/details?id=com.acrilogic.musichome">Google Play</a> and <a target="_blank" href="https://itunes.apple.com/us/developer/kevin-broh-kahn/id1047274120#">iTunes Store</a></small></h1>
 		<div class="subheader">Never be forced to power your screen on again.</div>
 	</div>
 </div>
@@ -363,20 +363,20 @@ print("""
 
 <h2>Purchase full version</h2>
 <div class="badge-container">
-	<a target="blank" class="apple-badge" href="https://itunes.apple.com/us/developer/kevin-broh-kahn/id1047274120#">
+	<a target="_blank" class="apple-badge" href="https://itunes.apple.com/us/developer/kevin-broh-kahn/id1047274120#">
 		<img alt="Find in App Store" src="/assets/img/Download_on_the_App_Store_Badge_US-UK_135x40.svg">
 	</a>
-	<a target="blank" href="https://play.google.com/store/apps/details?id=com.acrilogic.musichome">
+	<a target="_blank" href="https://play.google.com/store/apps/details?id=com.acrilogic.musichome">
 		<img alt="Get it on Google Play" src="/assets/img/en_generic_rgb_wo_45.png" />
 	</a>
 </div>
 
 <h2>Download 2 week trial</h2>
 <div class="badge-container">
-	<a target="blank" class="apple-badge" href="https://itunes.apple.com/us/developer/kevin-broh-kahn/id1047274120#">
+	<a target="_blank" class="apple-badge" href="https://itunes.apple.com/us/developer/kevin-broh-kahn/id1047274120#">
 		<img alt="Find in App Store" src="/assets/img/Download_on_the_App_Store_Badge_US-UK_135x40.svg">
 	</a>
-	<a target="blank" href="https://play.google.com/store/apps/details?id=com.acrilogic.musichometrial">
+	<a target="_blank" href="https://play.google.com/store/apps/details?id=com.acrilogic.musichometrial">
 		<img alt="Get it on Google Play" src="/assets/img/en_generic_rgb_wo_45.png" />
 	</a>
 </div>

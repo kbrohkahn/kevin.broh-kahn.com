@@ -10,7 +10,7 @@ print("""
 		<img class="img-responsive" alt="Ratfink Icon" src="/assets/img/ratfink/icon.png">
 	</div>
 	<div class="col-xxs-12 col-xs-6 col-sm-9 col-md-10 col-lg-11">
-		<h1>Ratfink <small><a target="blank" href="https://play.google.com/store/apps/details?id=com.play2think.ratfink">Google Play</a></small></h1>
+		<h1>Ratfink <small><a target="_blank" href="https://play.google.com/store/apps/details?id=com.play2think.ratfink">Google Play</a></small></h1>
 		<div class="subheader">A combination of poker and bridge that's easy to learn and fun to play.</div>
 	</div>
 </div>
@@ -182,7 +182,7 @@ print("""
 
 <h2>Download Ratfink for free</h2>
 <div class="badge-container">
-	<a target="blank" href="https://play.google.com/store/apps/details?id=com.play2think.ratfink">
+	<a target="_blank" href="https://play.google.com/store/apps/details?id=com.play2think.ratfink">
 		<img alt="Get it on Google Play" src="/assets/img/en_generic_rgb_wo_45.png" />
 	</a>
 </div>

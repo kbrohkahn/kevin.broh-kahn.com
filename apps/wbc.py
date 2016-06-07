@@ -10,12 +10,12 @@ print("""
 		<img class="img-responsive" alt="WBC Icon" src="/assets/img/wbc/icon.png">
 	</div>
 	<div class="col-xxs-12 col-xs-8 col-sm-9 col-md-10 col-lg-11">
-		<h1>WBC <small><a target="blank" href="https://play.google.com/store/apps/details?id=org.boardgamers.wbc">Google Play</a></small></h1>
+		<h1>WBC <small><a target="_blank" href="https://play.google.com/store/apps/details?id=org.boardgamers.wbc">Google Play</a></small></h1>
 		<div class="subheader">The official application of the World Boardgaming Championships.</div>
 	</div>
 </div>
 <h2>Description</h2>
-<p class="indented">This is the official app of the World Boardgaming Championships, the largest event presented by the Boardgame Players Association (BPA). From August 3-9, 2015, join us at the Lancaster Host Resort in Lancaster, PA, USA for a week of various board game tournaments, auctions, and vending. Board gamers, players, collectors, and game enthusiasts of all ages and experience levels are welcome. Visit <a target="blank" href="http://boardgamers.org/landing.shtml">the WBC web site</a> for more info.</p>
+<p class="indented">This is the official app of the World Boardgaming Championships, the largest event presented by the Boardgame Players Association (BPA). From August 3-9, 2015, join us at the Lancaster Host Resort in Lancaster, PA, USA for a week of various board game tournaments, auctions, and vending. Board gamers, players, collectors, and game enthusiasts of all ages and experience levels are welcome. Visit <a target="_blank" href="http://boardgamers.org/landing.shtml">the WBC web site</a> for more info.</p>
 <h2>Features</h2>
 	<ul>
 	<li>Offline storage of schedule (app does not require internet connection after download)</li>

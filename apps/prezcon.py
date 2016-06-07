@@ -10,7 +10,7 @@ print("""
 		<img class="img-responsive" alt="Prezcon Icon" src="/assets/img/prezcon/icon.png">
 	</div>
 	<div class="col-xxs-12 col-xs-8 col-sm-9 col-md-10 col-lg-11">
-		<h1>Prezcon <small><a target="blank" href="https://play.google.com/store/apps/details?id=com.prezcon.prezcon">Google Play</a></small></h1>
+		<h1>Prezcon <small><a target="_blank" href="https://play.google.com/store/apps/details?id=com.prezcon.prezcon">Google Play</a></small></h1>
 		<div class="subheader">The official application of the Prezcon Winter Nationals.</div>
 	</div>
 </div>
