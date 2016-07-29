@@ -89,7 +89,7 @@ p {line-height: 1.4em; margin-bottom: 1em}
 .small-icon {height: 32px; width: 32px; margin-right: 4px;}
 
 /* Tables */
-.table {background-color: #c8ecc6}
+.table {background-color: #aaaaaa}
 .table>tbody>tr>td {vertical-align: middle;}
 
 .winner:nth-of-type(even) {background-color: #BFFFBF;}
