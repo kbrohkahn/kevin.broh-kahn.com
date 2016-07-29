@@ -92,6 +92,13 @@ p {line-height: 1.4em; margin-bottom: 1em}
 .table {background-color: #c8ecc6}
 .table>tbody>tr>td {vertical-align: middle;}
 
+.winner:nth-of-type(even) {background-color: #BFFFBF;}
+.winner:nth-of-type(odd) {background-color: #E5FFE5;}
+.alternate-high:nth-of-type(odd) {background-color: #FFFFBF;}
+.alternate-high:nth-of-type(even) {background-color: #FFFFE5;}
+.alternate-low:nth-of-type(odd) {background-color: #aaaaaa;}
+.alternate-low:nth-of-type(even) {background-color: #cccccc;}
+
 /* Social links */
 .navigation-links .social-links li {margin-top: 8px; display: inline-block;}
 .navigation-links .social-links li a { margin: 4px 8px;}

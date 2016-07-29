@@ -10,26 +10,31 @@ header = ("Badge", "Full Name", "H1?", "H2?", "H3?", "P1", "P2", "P3", "W in 1st
 
 print """
 <h4>2016 results (through 2 heats)</h4>
+<h2>All 30 winners advance to semis!</h2>
+<b>Alternates will advance if less than 25 winners show up for semis. If you are a top 5 alternate, you might want to show up to the semis Saturday at 1100 in Ballroom.</b>
+<div class="winner">Winner, guaranteed advance</div>
+<div class="alternate-high">High alternate, please show up to SF</div>
+<div class="alternate-low">Low alternate</div>
 <div class="scroll-x">
-<table class="table table-striped">
-	<thead>
-		<tr>
-			<th>Place</th>
-			<th>Badge</th>
-			<th>Full Name</th>
-			<th>Heat 1<br>Entry?</th>
-			<th>Heat 2<br>Entry?</th>
-			<th>Heat 3<br>Entry?</th>
-			<th>Heat 1<br>Points</th>
-			<th>Heat 2<br>Points</th>
-			<th>Heat 3<br>Points</th>
-			<th>Win in 1st entry?</th>
-			<th>Win in 2nd entry?</th>
-			<th>Win in 3rd entry?</th>
-			<th>Total Points</th>
-		</tr>
-	</thead>
-	<tbody>
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>Place</th>
+				<th>Badge</th>
+				<th>Full Name</th>
+				<th>Heat 1<br>Entry?</th>
+				<th>Heat 2<br>Entry?</th>
+				<th>Heat 3<br>Entry?</th>
+				<th>Heat 1<br>Points</th>
+				<th>Heat 2<br>Points</th>
+				<th>Heat 3<br>Points</th>
+				<th>Win in 1st entry?</th>
+				<th>Win in 2nd entry?</th>
+				<th>Win in 3rd entry?</th>
+				<th>Total Points</th>
+			</tr>
+		</thead>
+		<tbody>
 """
 
 results = (("1", "5205", "Cody Zimmerman", "TRUE", "TRUE", "FALSE", "10", "10", "0", "TRUE", "TRUE", "FALSE", "20"),
@@ -122,9 +127,25 @@ results = (("1", "5205", "Cody Zimmerman", "TRUE", "TRUE", "FALSE", "10", "10", 
 ("88", "4388", "Aidan Czyryca", "FALSE", "TRUE", "FALSE", "0", "0", "0", "FALSE", "FALSE", "FALSE", "0"),
 ("89", "7123", "Eric McGlohon", "FALSE", "TRUE", "FALSE", "0", "0", "0", "FALSE", "FALSE", "FALSE", "0"))
 
+lastWinnerIndex = 99
+numAlternates = 5
+
 print ""
-for result in results:
-	print("<tr>")
+for i in range(0, len(results):
+	result = results[i]
+	isWinner = result[12] < 10
+	if lastWinnerIndex == 99 and isWinner:
+		lastWinnerIndex = i
+
+	classString = ""
+	if isWinner:
+		classString=" class='winner'"
+	elif i > lastWinnerIndex && i <= lastWinnerIndex + numAlternates:
+		classString=" class='alternate-high'"
+	else:
+		classString=" class='alternate-low'"
+
+	print("<tr{0}>".format(classString))
 
 	for value in result:
 		print("<td>{0}</td>".format(value))
