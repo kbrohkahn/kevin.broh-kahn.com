@@ -31,7 +31,7 @@ print("""
 			<li>Final: Russia</li>
 		</ul>
 		<em>If there are not enough maps in any of the heats, games will be played on the default US map</em>
-		<h4>Tournament format</h4>
+		<h4 id="tournament-format">Tournament format</h4>
 		<p>HMWG. Up to 36 players will advance to the semifinal. Rankings determined by:
 		<ol type="A">
 			<li>Most Wins</li>
@@ -41,7 +41,7 @@ print("""
 			<li>Based on points earned</li>
 			<li>Margin of victory (or defeat if between two 2nd places)</li>
 		</ol>
-		<h4>Points</h4>
+		<h4 id="heat-points">Points</h4>
 		<h6>5-player game (default)</h6>
 		<ol>
 			<li>10 Points</li>

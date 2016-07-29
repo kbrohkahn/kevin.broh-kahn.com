@@ -26,7 +26,6 @@ img {max-width: 100%;}
 /* Various */
 .large-margin-top {margin-top: 75px;}
 .light-background {background: #edf0f8}
-.table>tbody>tr>td {vertical-align: middle;}
 
 /* input row and group fix */
 .input-row > div {margin-top: 15px;}
@@ -72,9 +71,12 @@ p {line-height: 1.4em; margin-bottom: 1em}
 .indented {text-indent: 32px;}
 .clearfix:after {display: table; content: ''; clear: both;}
 .hidden {display: none;}
+.scroll-x {overflow-x: scroll;}
 
 /* Navbar */
 .navbar {background-color: #061539; border: none; z-index: 20}
+.navbar .dropdown-menu ul {margin-left: 0;}
+.navbar .dropdown-menu ul li {color: inherit;}
 
 /* Navigation links (for index.py pages) */
 .navigation-links h4 {margin-top: 0}
@@ -85,6 +87,10 @@ p {line-height: 1.4em; margin-bottom: 1em}
 .navigation-links li a span {display: table-cell; line-height: 32px;}
 
 .small-icon {height: 32px; width: 32px; margin-right: 4px;}
+
+/* Tables */
+.table {background-color: #c8ecc6}
+.table>tbody>tr>td {vertical-align: middle;}
 
 /* Social links */
 .navigation-links .social-links li {margin-top: 8px; display: inline-block;}

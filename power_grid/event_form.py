@@ -1,9 +1,8 @@
 #!/usr/bin/env python
-with open("../templates/header.html", "r") as header:
+with open("../../templates/header.html", "r") as header:
 	print header.read()
-with open("../templates/navbar.html", "r") as navbar:
+with open("../../templates/navbar.html", "r") as navbar:
 	print navbar.read()
-
 
 print("""
 <div class="row">
@@ -43,7 +42,7 @@ print("""
 """)
 
 
-with open("../templates/footer.html", "r") as footer:
+with open("../../templates/footer.html", "r") as footer:
 	print footer.read()
 
 
