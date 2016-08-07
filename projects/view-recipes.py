@@ -1110,7 +1110,7 @@ try:
 		<img class="img-responsive" alt="View Recipes Icon" src="/assets/img/view-recipes/icon.png">
 	</div>
 	<div class="col-xxs-12 col-xs-8 col-sm-9 col-md-10 col-lg-11">
-		<h1>View Recipes <small><a target="_blank" href="https://github.com/kbrohkahn/recipe-parser">Github</a></small></h1>
+		<h1>View Recipes <small><a target="_blank" href="https://bitbucket.org/kbrohkahn/kevin.broh-kahn.com">Bitbucket</a></small></h1>
 		<div class="subheader">Search for, filter, and transform recipes.</div>
 	</div>
 </div>
