@@ -15,6 +15,7 @@ print("""
 			<ul>
 				<li><a href="view-recipes"><img alt="View Recipes icon" class="small-icon" src="/assets/img/view-recipes/icon.png"><span>View Recipes</span></a></li>
 				<li><a href="website"><img alt="This website icon" class="small-icon" src="/assets/img/kevin.broh-kahn.com/icon.png"><span>This website</span></a></li>
+				<li><a href="sixsided"><img alt="Six Sided icon" class="small-icon" src="/assets/img/sixsided.com/icon.png"><span>Six Sided Simulations</span></a></li>
 			</ul>
 		</div>
 	</div>
