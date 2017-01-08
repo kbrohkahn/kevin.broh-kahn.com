@@ -1,0 +1,12 @@
+{
+	"availableFeeds": [
+		{
+			"source": "https://apod.nasa.gov/apod.rss",
+			"title": "Astronomy Picture of the Day",
+			"enabled": true,
+			"imageOnWebPage": true,
+			"entryImageLinkTag": "",
+			"entryImageLinkAttribute": ""
+		}
+    ]
+}

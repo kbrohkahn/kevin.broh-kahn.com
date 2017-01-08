@@ -1,81 +1,12 @@
 #!/usr/bin/env python
 import cgi
-import json
 import sqlite3
 import random
 
-#
-# recreate SQLite database from JSON file
-#
-def recreateDatabase():
-	allRecipes = []
-	with open("../recipe-parser/recipes.json") as jsonFile:
-		for line in jsonFile:
-			allRecipes.append(json.loads(line))
-
-	try:
-		# open database and get cursor
-		connection = sqlite3.connect('recipes.db')
-		cursor = connection.cursor()
-
-		cursor.executescript("""
-DROP TABLE IF EXISTS Recipes;
-CREATE TABLE Recipes(Id INT, Name TEXT, Servings INT, Calories INT);
-
-DROP TABLE IF EXISTS Directions;
-CREATE TABLE Directions(RecipeId INT, Step INT, Direction TEXT);
-
-DROP TABLE IF EXISTS Footnotes;
-CREATE TABLE Footnotes(RecipeId INT, Footnote TEXT);
-
-DROP TABLE IF EXISTS Labels;
-CREATE TABLE Labels(RecipeId INT, Label TEXT);
-
-DROP TABLE IF EXISTS Ingredients;
-CREATE TABLE Ingredients(Id INT, RecipeId INT, Name TEXT, Amount INT, Unit TEXT);
-
-DROP TABLE IF EXISTS IngredientDescriptions;
-CREATE TABLE IngredientDescriptions(IngredientId INT, Description TEXT);
-
-DROP TABLE IF EXISTS IngredientLabels;
-CREATE TABLE IngredientLabels(IngredientId INT, Label TEXT);""")
-
-		for recipe in allRecipes:
-			recipeId = recipe["id"]
-			cursor.execute("INSERT INTO Recipes VALUES(?, ?, ?, ?);", (recipeId, recipe["name"], recipe["servings"], recipe["calories"]))
-
-			for direction in recipe["directions"]:
-				cursor.execute("INSERT INTO Directions VALUES(?, ?, ?);", (recipeId, direction["step"], direction["direction"]))
-
-			for footnote in recipe["footnotes"]:
-				cursor.execute("INSERT INTO Footnotes VALUES(?, ?);", (recipeId, footnote))
-
-			for label in recipe["labels"]:
-				cursor.execute("INSERT INTO Labels VALUES(?, ?);", (recipeId, label))
-
-			i=0
-			for ingredient in recipe["ingredients"]:
-				ingredientId = recipeId * 100 + i
-				cursor.execute("INSERT INTO Ingredients VALUES(?, ?, ?, ?, ?);", (ingredientId, recipeId, ingredient["ingredient"],\
-					ingredient["amount"], ingredient["unit"]))
-
-				for ingredientDescription in ingredient["descriptions"]:
-					cursor.execute("INSERT INTO IngredientDescriptions VALUES(?, ?);", (ingredientId, ingredientDescription))
-
-				for ingredientLabel in ingredient["labels"]:
-					cursor.execute("INSERT INTO IngredientLabels VALUES(?, ?);", (ingredientId, ingredientLabel))
-
-				i+=1
-
-		# commit and close connection		
-		connection.commit()
-		connection.close()
-
-	# sqlite error
-	except sqlite3.Error as e:
-		print("Error %s:" % e.args[0])
-
-
+with open("../templates/header.html", "r") as header:
+	print header.read()
+with open("../templates/navbar.html", "r") as navbar:
+	print navbar.read()
 
 #
 # return HTML string for ingredient
@@ -251,7 +182,7 @@ def displaySearch(searchString):
 	</div>
 	<div class="input-row">
 		<div class="input-group">
-			<input type="text" class="form-control" id="recipe-input" name="recipe-input" placeholder="Enter recipe name (optional)" value="{0}">
+			<input type="text" class="form-control" id="recipe-input" name="recipe-input" placeholder="Enter recipe name (optional)" value=\"""" + searchString + """\">
 			<div class="input-group-btn">
 				<button type="submit" class="btn btn-primary">Find recipes</button>
 
@@ -270,7 +201,7 @@ def displaySearch(searchString):
 		<input type="text" id="transformation" name="transformation">
 	</div>
 </form>
-""".format(searchString))
+""")
 
 
 
@@ -357,47 +288,39 @@ def displaySearchResults(searchString):
 
 		# get query "WHERE" clause for each word
 		for word in words:
-			queryString += "Name Like '%{0}%' AND ".format(word.replace("'", "''"))
+			queryString += "Name Like '%" + word.replace("'", "''") + "%' AND "
 
 	queryString += "Id IN ( SELECT Id FROM Recipes "
 
 	# append excluded ingredient labels to query string
 	if len(excludeIngredientLabels) > 0:
 		queryString += "EXCEPT "
-		queryString += "SELECT Ingredients.RecipeId FROM Ingredients CROSS JOIN IngredientLabels \
-				ON IngredientLabels.IngredientId = Ingredients.Id \
-				WHERE IngredientLabels.Label IN ('{0}') ".format("', '".join(excludeIngredientLabels))
+		queryString += "SELECT Ingredients.RecipeId FROM Ingredients CROSS JOIN IngredientLabels ON IngredientLabels.IngredientId = Ingredients.Id WHERE IngredientLabels.Label IN ('{0}') ".format("', '".join(excludeIngredientLabels))
 
 	# append excluded recipe labels to query string
 	if len(excludeRecipeLabels) > 0:
 		queryString += "EXCEPT "
-		queryString += "SELECT Labels.RecipeId FROM Labels \
-				WHERE Labels.Label IN ('{0}') ".format("', '".join(excludeRecipeLabels))
+		queryString += "SELECT Labels.RecipeId FROM Labels WHERE Labels.Label IN ('{0}') ".format("', '".join(excludeRecipeLabels))
 
 	# append excluded ingredients to query string
 	for excludeIngredient in excludeIngredients:
 		queryString += "EXCEPT "
-		queryString += "SELECT Ingredients.RecipeId FROM Ingredients \
-				WHERE Ingredients.Name LIKE '%{0}%' COLLATE NOCASE ".format(excludeIngredient.replace("'", "''"))
+		queryString += "SELECT Ingredients.RecipeId FROM Ingredients WHERE Ingredients.Name LIKE '%{0}%' COLLATE NOCASE ".format(excludeIngredient.replace("'", "''"))
 
 	# append included ingredient labels to query string
 	for includeIngredientLabel in includeIngredientLabels:
 		queryString += "INTERSECT "
-		queryString += "SELECT Ingredients.RecipeId FROM Ingredients CROSS JOIN IngredientLabels \
-				ON IngredientLabels.IngredientId = Ingredients.Id \
-				WHERE IngredientLabels.Label = '{0}' ".format(includeIngredientLabel)
+		queryString += "SELECT Ingredients.RecipeId FROM Ingredients CROSS JOIN IngredientLabels ON IngredientLabels.IngredientId = Ingredients.Id WHERE IngredientLabels.Label = '{0}' ".format(includeIngredientLabel)
 
 	# append included recipe labels to query string
 	for includeRecipeLabel in includeRecipeLabels:
 		queryString += "INTERSECT "
-		queryString += "SELECT Labels.RecipeId FROM Labels \
-				WHERE Labels.Label = '{0}' ".format(includeRecipeLabel)
+		queryString += "SELECT Labels.RecipeId FROM Labels WHERE Labels.Label = '{0}' ".format(includeRecipeLabel)
 	
 	# append included ingredients to query string
 	for includeIngredient in includeIngredients:
 		queryString += "INTERSECT "
-		queryString += "SELECT Ingredients.RecipeId FROM Ingredients \
-				WHERE Ingredients.Name LIKE '%{0}%' COLLATE NOCASE ".format(includeIngredient.replace("'", "''"))
+		queryString += "SELECT Ingredients.RecipeId FROM Ingredients WHERE Ingredients.Name LIKE '%{0}%' COLLATE NOCASE ".format(includeIngredient.replace("'", "''"))
 
 	queryString += ") ORDER BY Name ASC"
 
@@ -431,8 +354,8 @@ def displaySearchResults(searchString):
 	print("""
 <div class="row large-margin-top">
 	<div class="col-xs-12">
-		<h2>{0}</h2>
-		<div class="center">""").format(searchResultString)
+		<h2>""" + searchResultString + """</h2>
+		<div class="center">""")
 
 	# print included ingredients header string
 	print(formatListOfStringsAsHeader("Containing ", includeIngredients))
@@ -458,15 +381,15 @@ def displaySearchResults(searchString):
 	# print each recipe as table row
 	count=0
 	for recipeName in allRecipes:
-		recipeName = recipeName[0].encode('utf-8');
+		recipeName = str(recipeName[0].encode('utf-8'));
 		print("""
 <tr>
-	<td>{0}</td>
+	<td>""" + recipeName + """</td>
 	<td class="text-right">
-		<button class="btn btn-default" onclick="viewRecipe('{1}')">View Recipe</button>
+		<button class="btn btn-default" onclick="viewRecipe('""" + recipeName.replace("'", "\\'") + """')">View Recipe</button>
 	</td>
 </tr>
-""".format(recipeName, recipeName.replace("'", "\\'")))
+""")
 		count+=1
 
 		# display a max of 100 recipes
@@ -617,7 +540,7 @@ def displayRecipe(recipe):
 		
 		# print each footnote as list item
 		for footnote in recipe["footnotes"]:
-			print("<li>{0}</li>".format(footnote[0]))
+			print("<li>" + footnote[0] + "</li>")
 		
 		# print row and list closing tags
 		print("""
@@ -641,18 +564,18 @@ def displayRecipe(recipe):
 	transformations = ['American - New England', 'Chinese', 'French', 'German', 'Indian', 'Indonesian', 'Italian', 'Japanese', 
 			'Mexican', 'Spanish', 'Thai', 'Turkish', 'Vegan', 'Vegetarian']
 	for transformation in transformations:
-		print("<option>{0}</option>".format(transformation))
+		print("<option>"+transformation+"</option>")
 
 	# print recipe transformations row and select closing tags
 	print("""	
 			</select>
 			<span class="input-group-btn">
-				<button class="btn btn-default" onclick="viewAndTransformRecipe('{0}')">Transform</button>
+				<button class="btn btn-default" onclick="viewAndTransformRecipe('"""+ recipe["name"].replace("'", "\\'") + """')">Transform</button>
 			</span>
 		</div>
 	</div>
 </div>
-""".format(recipe["name"].replace("'", "\\'")))
+""")
 
 
 
@@ -934,8 +857,7 @@ def transformRecipe(recipe, transformation):
 
 		for ingredient in recipe["ingredients"]:
 			# check if ingredient is a must-have
-			if not hasSausage and (ingredient["ingredient"] == "sausages" or ingredient["ingredient"] == "frankfurters" or \
-					ingredient["ingredient"] == "kielbasas"):
+			if not hasSausage and (ingredient["ingredient"] == "sausages" or ingredient["ingredient"] == "frankfurters" or 	ingredient["ingredient"] == "kielbasas"):
 				hasSausage = True
 			if not hasTomatoes and ingredient["ingredient"] == "tomatoes":
 				hasTomatoes = True
@@ -1069,6 +991,7 @@ def transformRecipe(recipe, transformation):
 #
 #main program
 #
+
 try:
 	form = cgi.FieldStorage()
 
@@ -1082,7 +1005,7 @@ try:
 	ingredientNames = []
 	ingredientRadioOn = []
 	for i in range(0, numIngredientInputs):
-		ingredientFormName = "ingredient-{0}".format(i)
+		ingredientFormName = "ingredient-" + str(i)
 		ingredientRadioOn.append(form.getvalue(ingredientFormName, "on") == "on")
 		ingredientNames.append(form.getvalue(ingredientFormName + "-string", ""))
 
@@ -1096,10 +1019,6 @@ try:
 	for recipeLabel in recipeLabels:
 		recipeLabelValues.append(form.getvalue("recipe-label-" + recipeLabel.replace(" ", "-"), ""))
 
-	with open("../templates/header.html", "r") as header:
-		print header.read()
-	with open("../templates/navbar.html", "r") as navbar:
-		print navbar.read()
 
 	# print header and link to github
 	print("""
@@ -1153,8 +1072,10 @@ try:
 	except sqlite3.Error as e:
 		print("<b>Error %s:</b>" % e.args[0])
 
-	with open("../templates/footer.html", "r") as footer:
-		print footer.read()
-
 except:
 	cgi.print_exception()
+
+
+
+with open("../templates/footer.html", "r") as footer:
+	print footer.read()
