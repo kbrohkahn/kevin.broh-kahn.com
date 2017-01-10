@@ -3,10 +3,10 @@ with open("../templates/header.html", "r") as header:
 	print header.read()
 with open("../templates/navbar.html", "r") as navbar:
 	print navbar.read()
-with open("results_header.html", "r") as resultsHeader:
-	print resultsHeader.read()
 
 print """
+<h1>WBC Power Grid Results</h1>
+<p>Please view the <a href="/power_grid/preview">preview</a> to view information on how points and rankings are determined. There you will find information on how <a href="/power_grid/preview#heat-points">points</a> are scored each heat and how <a href="/power_grid/preview#tournament-format">player rankings</a> are determined. Thank you for playing, I'll try to update these results as soon as each heat ends.</p>
 <h4>2016 results (All 3 heats)</h4>
 <h2>All 30 winners advance to semis!</h2>
 <b>Alternates will advance if less than 25 winners show up for semis. If you are a top 5 alternate, you might want to show up to the semis Saturday at 1100 in Ballroom.</b>

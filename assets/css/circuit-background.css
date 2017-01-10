@@ -54,19 +54,19 @@
 }
 
 @media screen and (min-width: 1024px) {
-	#circuit-background-cover {height: 300px; width: 300px; margin-left: -150px; margin-top: -150px;}
+	#circuit-background-cover {height: 340px; width: 340px; margin-left: -170px; margin-top: -170px;}
 
 	.navigation-links li a {margin: 16px 0;}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-	#circuit-background-cover {height: 280px; width: 280px; margin-left: -140px; margin-top: -140px;}
+	#circuit-background-cover {height: 320px; width: 320px; margin-left: -160px; margin-top: -160px;}
 
 	.navigation-links li a {margin: 12px 0;}
 }
 
 @media screen and (min-width: 640px) and (max-width: 767px) {
-	#circuit-background-cover {height: 260px; width: 260px; margin-left: -130px; margin-top: -130px;}
+	#circuit-background-cover {height: 300px; width: 300px; margin-left: -150px; margin-top: -150px;}
 
 	.navigation-links li a {margin: 8px 0;}
 }
