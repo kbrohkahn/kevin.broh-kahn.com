@@ -86,7 +86,8 @@ p {line-height: 1.4em; margin-bottom: 1em}
 .navigation-links li a.no-icon {text-align: center; margin: 4px auto; }
 .navigation-links li a span {display: table-cell; line-height: 32px;}
 
-.small-icon {height: 32px; width: 32px; margin-right: 4px;}
+.app-link img {height: 32px; width: 32px; }
+.app-link {margin-right: 4px;}
 
 /* Tables */
 .table>tbody>tr>td {vertical-align: middle;}
