@@ -27,7 +27,7 @@ def getIngredientHTML(index):
 		<span class="input-group-btn">
 			<button class="btn btn-default" type="button" onclick="clearIngredient({1})">X</button>
 		</span>
-		<input type="text" class="form-control" id="ingredient-{1}-string" name="ingredient-{1}-string" value={0}>
+		<input type="text" class="form-control" id="ingredient-{1}-string" name="ingredient-{1}-string" value="{0}">
 		<div class="input-group-addon" title="Recipe must include ingredient">
 			<input id="ingredient-{1}-on" type="radio" name="ingredient-{1}" class="radio-button-default" value="on" {2}>
 			<label for="ingredient-{1}-on"><i class="fa fa-check-circle fa-lg"></i></label>
