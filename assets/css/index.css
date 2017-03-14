@@ -9,10 +9,10 @@
 .home-span + span {position: absolute; z-index: 12;}
 .home-span + span ul {list-style: none; padding-left: 0;}
 .left-triangle-span {left: 0; top: 0; border-right-color: transparent; border-top-color: #fff; border-left: none; border-bottom: none;}
-.right-triangle-span {right: 0; bottom: 0; border-left-color: transparent; border-bottom-color: #b6c3e2; border-right: none; border-top: none; }
+.right-triangle-span {right: 0; bottom: 0; border-left-color: transparent; border-bottom-color: #b6c3e2; border-right: none; border-top: none;}
 
-.right-triangle-span + span ul {text-align: right;}
-.right-triangle-span + span .app-link {margin-right: 0px; margin-left: 4px}
+.right-triangle-span + span { text-align: right; }
+.right-triangle-span + span .app-link { margin-right: 0; margin-left: auto;}
 
 @media screen and (min-width: 1024px) {
 	.left-triangle-span {border-right-width: 700px; border-top-width: 700px}
