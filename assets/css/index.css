@@ -4,9 +4,8 @@
 #headshot div {position: absolute; width: 200px; height: 200px; border-radius: 100px;}
 #headshot div {background: #efefef; opacity: 0; text-align: center; line-height: 200px;}
 
-.home-span { position: absolute; opacity: .8; }
-.home-span { z-index: 11; border: solid;}
-.home-span + span {position: absolute; z-index: 12;}
+.home-span { position: absolute; opacity: .8; z-index: 11; border: solid; }
+.home-span + span.navigation-links {position: absolute; z-index: 12; max-width: 250px;}
 .home-span + span ul {list-style: none; padding-left: 0;}
 .left-triangle-span {left: 0; top: 0; border-right-color: transparent; border-top-color: #fff; border-left: none; border-bottom: none;}
 .right-triangle-span {right: 0; bottom: 0; border-left-color: transparent; border-bottom-color: #b6c3e2; border-right: none; border-top: none;}
