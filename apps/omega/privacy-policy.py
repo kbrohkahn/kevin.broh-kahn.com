@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-
 with open("../../templates/header.html", "r") as header:
 	print header.read()
 with open("../../templates/navbar.html", "r") as navbar:
