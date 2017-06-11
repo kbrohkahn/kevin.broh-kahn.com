@@ -1,5 +1,5 @@
-var documentHeight=$(document).height();
-var documentWidth=$(document).width();
+var documentHeight=$(window).height();
+var documentWidth=$(window).width();
 
 // set number of paths based on document size
 var count = documentHeight * documentWidth / 20000;

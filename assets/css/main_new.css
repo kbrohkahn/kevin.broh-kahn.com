@@ -88,8 +88,36 @@ p {line-height: 1.4em; margin-bottom: 1em}
 .navigation-links li a.no-icon {text-align: center; margin: 4px auto; }
 .navigation-links li a span {display: table-cell; line-height: 32px;}
 
-.app-link img {height: 32px; width: 32px; margin: 0 8px;}
-.app-link {margin-right: 4px;}
+
+
+
+
+
+#headers {text-align: center;}
+#headers #feature-graphic,
+#headers #feature-graphic img {width: 100%;}
+#headers .logo {}
+#headers .title {}
+#headers .subtitle {}
+#headers .links {}
+
+
+
+#description {}
+#description h2 {margin-top: 0;}
+#description .description-group {margin: 15px auto 85px;}
+#description .description-group ul li {margin: 15px 0;}
+#description h2,
+#description .screenshot {margin: 5px auto;}
+#description .screenshot {margin: 0 auto;position: relative;}
+#description .screenshot img {position: absolute;}
+
+#description .screenshot.android-wear-screenshot {background: url("../img/android-wear-background.png"); width: 250px; height: 350px; }
+#description .screenshot.android-wear-screenshot img { width: 230px; height: 230px; top: 60px; left: 10px;}
+
+
+
+
 
 /* Tables */
 .table>tbody>tr>td {vertical-align: middle;}
