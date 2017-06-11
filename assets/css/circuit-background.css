@@ -4,8 +4,6 @@
 #circuit-background-cover ul {padding: 0;}
 #circuit-background-cover li {list-style:none;}
 
-#footer {position: absolute; bottom: 0; z-index: 13;}
-
 .path {position: absolute; overflow: hidden;}
 .vertical-path {border-top: solid 4px #2E4272; border-bottom: solid 4px #2E4272; width: 4px;}
 .vertical-path span {position: absolute;width: 4px; height: 100px;}
@@ -55,24 +53,16 @@
 
 @media screen and (min-width: 1024px) {
 	#circuit-background-cover {height: 340px; width: 340px; margin-left: -170px; margin-top: -170px;}
-
-	.navigation-links li a {margin: 16px 0;}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 	#circuit-background-cover {height: 320px; width: 320px; margin-left: -160px; margin-top: -160px;}
-
-	.navigation-links li a {margin: 12px 0;}
 }
 
 @media screen and (min-width: 640px) and (max-width: 767px) {
 	#circuit-background-cover {height: 300px; width: 300px; margin-left: -150px; margin-top: -150px;}
-
-	.navigation-links li a {margin: 8px 0;}
 }
 
 @media screen and (max-width: 639px) {
 	#circuit-background-cover {height: 240px; width: 240px; margin-left: -120px; margin-top: -120px;}
-
-	.navigation-links li a {margin: 4px 0;}
 }

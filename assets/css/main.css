@@ -72,6 +72,7 @@ p {line-height: 1.4em; margin-bottom: 1em}
 .clearfix:after {display: table; content: ''; clear: both;}
 .hidden {display: none;}
 .scroll-x {overflow-x: scroll;}
+.container-no-padding {margin: 0 -15px;}
 
 /* Navbar */
 .navbar {background-color: #061539; border: none; z-index: 20}

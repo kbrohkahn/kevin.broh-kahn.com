@@ -1,0 +1,49 @@
+#top-div {position: relative; height: 100vh; background-color: rgba(16, 16, 128, .8);}
+#top-div div {position: absolute; text-align: center; }
+#top-div .new-navigation-links { width: 100%; top: 70%;}
+#top-div .new-navigation-links ul { width: 100%; padding: 0; list-style: none; text-align: center;}
+#top-div .new-navigation-links ul li { width: 20%; float: left; }
+#top-div .logo { top: 30%; left: 50%; margin-left: -100px; margin-top: -100px; z-index: 13;}
+#top-div .subtitle {width: 100%; top: 50%;}
+
+
+.project-section { padding: 25px; }
+.project-section h2.section-title {margin: 150px 0 100px;}
+
+.project-section#android-wear,
+.project-section#android {background-color: rgba(119, 193, 89, .3);}
+.project-section#ios {background-color: rgba(158,158,158, .3);}
+.project-section#web {background-color: rgba(22,122,188, .3);}
+
+.project { border: solid 3px rgba(0, 0, 0, .5); background-color: rgba(32, 32, 32, .5); text-align: center; padding: 15px; margin-bottom: 30px;}
+.project .project-link  { }
+.project .project-link:hover { text-decoration: none;}
+.project .project-icon { width: 200px; height: 200px; margin: 15px auto;}
+.project .project-title { color: rgba(0, 0, 0, 1); }
+.project .project-subtitle { color: rgba(0, 0, 0, 1);  height: 60px; }
+
+.project.ratfink {background-color: rgba(50,138,46, .3); border-color: rgba(50,138,46, 1)}
+.project.music-home {background-color: rgba(45,66,113, .3); border-color: rgba(45,66,113, 1)}
+.project.rss-wallpaper {background-color: rgba(170,135,57, .3); border-color: rgba(170,135,57, 1)}
+.project.ping-servers {background-color: rgba(0,63,111, .3); border-color: rgba(0,63,111, 1)}
+.project.wbc {background-color: rgba(49,66,140, .3); border-color: rgba(49,66,140, 1)}
+.project.prezcon {background-color: rgba(243,110,40, .3); border-color: rgba(243,110,40, 1)}
+
+.project.omega {background-color: rgba(75,229,75, .3); border-color: rgba(75,229,75, 1)}
+.project.notro {background-color: rgba(25,120,201, .3); border-color: rgba(25,120,201, 1)}
+.project.alenoi {background-color: rgba(129,102,0, .3); border-color: rgba(129,102,0, 1)}
+.project.charging-wear {background-color: rgba(6,21,57, .3); border-color: rgba(6,21,57, 1)}
+
+
+
+@media screen and (min-width: 1024px) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media screen and (min-width: 640px) and (max-width: 767px) {
+}
+
+@media screen and (max-width: 639px) {
+}
