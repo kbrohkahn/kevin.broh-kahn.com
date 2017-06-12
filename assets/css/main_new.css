@@ -106,6 +106,7 @@ p {line-height: 1.4em; margin-bottom: 1em}
 #description {}
 #description h2 {margin-top: 0;}
 #description .description-group {margin: 15px auto 85px;}
+#description .description-group h2 {text-transform: uppercase;}
 #description .description-group ul li {margin: 15px 0;}
 #description h2,
 #description .screenshot {margin: 5px auto;}
@@ -116,7 +117,8 @@ p {line-height: 1.4em; margin-bottom: 1em}
 #description .screenshot.android-wear-screenshot img { width: 230px; height: 230px; top: 60px; left: 10px;}
 
 
-
+#bottom-links {margin: 75px auto 50px; text-align: center;}
+#bottom-links .badge-container { margin: 0 auto 50px; }
 
 
 /* Tables */
