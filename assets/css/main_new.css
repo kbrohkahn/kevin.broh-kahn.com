@@ -91,13 +91,18 @@ p {line-height: 1.4em; margin-bottom: 1em}
 /*
 * NEW
 */
-#navigation-links {}
-#navigation-links ul { width: 100%; list-style: none; padding: 0;margin: 15px;}
-#navigation-links ul li {width: 20%;display: inline-block; position: relative;}
-#navigation-links ul li a {padding: 15px; width: 100%; text-align: center;}
-#navigation-links ul li a + ul {position: absolute; bottom: 0; display: none;}
-#navigation-links ul li a.active + ul,
-#navigation-links ul li a:hover + ul {display: block;}
+#navigation-links {background-color: #061539;}
+#navigation-links > ul { width: 100%; list-style: none; padding: 0; margin-bottom: 0;}
+#navigation-links > ul > li {width: 20%;display: inline-flex; position: relative;}
+#navigation-links > ul > li > a {padding: 15px; width: 100%; text-align: center; line-height: 20px;}
+#navigation-links > ul > li > a + ul {position: absolute; display: none; background-color: #061539; padding: 0; margin-top: 50px;width: 200px; left: 50%; margin-left: -100px;}
+#navigation-links > ul > li > a + ul > li {display: block; text-align: center;}
+#navigation-links > ul > li > a.active + ul,
+#navigation-links > ul > li > a:hover + ul, 
+#navigation-links > ul > li > a + ul:hover {display: block;}
+#navigation-links > ul > li > a + ul > li,
+#navigation-links > ul > li > a + ul > li > a {padding: 15px }
+#navigation-links > ul > li > a + ul > li > a { }
 
 
 
@@ -106,10 +111,11 @@ p {line-height: 1.4em; margin-bottom: 1em}
 #headers {text-align: center;}
 #headers #feature-graphic,
 #headers #feature-graphic img {width: 100%;}
-#headers .logo {}
-#headers .title {}
-#headers .subtitle {}
-#headers .links {}
+#headers .title {margin: 100px 0 15px;}
+#headers .subtitle {margin: 15px;}
+#headers .links {margin: 15px 0 100px;}
+#headers .logo { margin: 15px; }
+#headers .logo img { margin: 0 auto; }
 
 
 

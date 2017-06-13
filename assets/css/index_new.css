@@ -21,8 +21,8 @@
 .project-section#ios {background-color: rgba(158,158,158, .3);}
 .project-section#web {background-color: rgba(22,122,188, .3);}
 
-.project { border: solid 3px rgba(0, 0, 0, .5); background-color: rgba(32, 32, 32, .5); text-align: center; padding: 15px; margin-bottom: 30px;}
-.project .project-link  { }
+.project { border: solid 3px rgba(0, 0, 0, .5); background-color: rgba(32, 32, 32, .5); text-align: center; margin-bottom: 30px;}
+.project .project-link { padding: 15px; }
 .project .project-link:hover { text-decoration: none;}
 .project .project-icon { width: 200px; height: 200px; margin: 15px auto;}
 .project .project-title { color: rgba(0, 0, 0, 1); }
