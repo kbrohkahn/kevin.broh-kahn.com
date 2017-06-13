@@ -62,4 +62,48 @@ $(document).ready(function() {
 	$("#ingredient-labels input").click(function() {
 		changeRadioButton($(this).attr('id'))
 	});
+
+	var navbarHeight = $('#top-div .new-navigation-links').outerHeight();
+	$(window).scroll(function() {
+		if ($(window).scrollTop() > navbarHeight) {
+			$("#top-div .new-navigation-links").addClass("fixed");
+		} else {
+			$("#top-div .new-navigation-links").removeClass("fixed");
+		}
+	});
+
+
+
+
+	$(".section-link").click(function(e) {
+		var elementId = e.target;
+
+		$("html, body").animate({
+			scrollTop: $(elementId).offset().scrollTop
+		}, 5000);
+		// return false;
+	});
+
+	
+
+	$("#toggle-button").click(function() {
+		$("new-navigation-links").removeClass("autohide");
+	});
+
+	$("body").click(function() {
+		$("new-navigation-links").addClass("autohide");
+	});
+
+	$(".new-navigation-links > ul > li > a").click(function(e) {
+		var subList = $(this).siblings()[0];
+		if (subList.css("display") != "block") {
+			if ($subList.hasClass("active")) {
+				$subList.removeClass("active");
+			} else {
+				$subList.addClass("active");
+			}
+			e.preventDefault();
+			return false;
+		}
+	});
 });

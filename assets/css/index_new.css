@@ -1,16 +1,14 @@
 #top-background {background: linear-gradient(#b6c3e2, #fff);height: 100vh; position: fixed;}
 #top-div {position: relative; height: 100vh;}
 #top-div div {position: absolute; text-align: center}
-#top-div .logo { top: 25%; left: 50%; margin-left: -100px; margin-top: -100px; z-index: 13;}
+#top-div .logo { top: 25%; left: 50%; margin-left: -100px; margin-top: -100px; z-index: 11;}
 #top-div .logo,
 #top-div .logo img {width: 200px; height: 200px;}
 #top-div .title {width: 100%; top: 15px;}
 #top-div .subtitle {width: 100%; top: 45%;   }
-#top-div .new-navigation-links { width: 100%; top: 60%; background-color: rgba(6,21,57, .5);}
-#top-div .new-navigation-links ul { width: 100%; padding: 0; list-style: none; }
-#top-div .new-navigation-links ul li { width: 20%; float: left; padding: 15px;}
-#top-div .new-navigation-links ul li a { padding: 5px; }
 #top-div .links { top: 70%; }
+
+.new-navigation-links { position: absolute; top: 60%; background-color: rgba(6,21,57, .5);}
 
 
 .project-section { padding: 25px; }
@@ -71,7 +69,6 @@ a:link {color: #dfdfdf;}
 }
 
 @media screen and (max-width: 639px) {
-	#top-div .new-navigation-links { height: 40vh; position: relative;}
-	#top-div .new-navigation-links ul {position: absolute; top: 50%; transform: translateY(-50%);}
-	#top-div .new-navigation-links ul li { width: 100%; }
-}
+/*	.new-navigation-links { height: 40vh; position: relative;}
+	.new-navigation-links ul {position: absolute; top: 50%; transform: translateY(-50%);}
+*/}
