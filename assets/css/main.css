@@ -81,35 +81,34 @@ p {line-height: 1.4em; margin-bottom: 1em}
 .navbar .dropdown-menu ul li {color: inherit;}
 
 /* Navigation links (for index.py pages) */
-.navigation-links h4 {margin-top: 0}
+/*.navigation-links h4 {margin-top: 0}
 .navigation-links ul {display: table; margin: 0 auto;}
 .navigation-links li {display: block;}
 .navigation-links li a {display: table; margin: 4px 0;}
 .navigation-links li a.no-icon {text-align: center; margin: 4px auto; }
 .navigation-links li a span {display: table-cell; line-height: 32px;}
-
+*/
 /*
 * NEW
 */
 
-.new-navigation-links {background-color: #061539; width: 100%;	}
-.new-navigation-links > ul { width: 100%; list-style: none; padding: 0; margin-bottom: 0;}
-.new-navigation-links > ul > li {width: 20%; float: left; position: relative;}
-.new-navigation-links > ul > li > a {padding: 15px 0; width: 100%; text-align: center; line-height: 20px; color: #bfbfbf;display: block;}
-.new-navigation-links > ul > li > a + ul {position: absolute; display: none; background-color: #223153; padding: 0; width: 200px; left: 50%; margin-left: -100px; top: 50px; z-index: 14;}
-.new-navigation-links > ul > li > a + ul > li {display: block; text-align: center;}
-.new-navigation-links > ul > li > a.active + ul,
-.new-navigation-links > ul > li > a:hover + ul, 
-.new-navigation-links > ul > li > a + ul:hover {display: block;}
-.new-navigation-links > ul > li > a + ul > li,
-.new-navigation-links > ul > li > a + ul > li > a {}
-.new-navigation-links > ul > li > a + ul > li > a { color: #7c612a; display: block; padding: 15px;}
+.navigation-links #mobile-header,
+.navigation-links {background-color: #061539; width: 100%;	}
+.navigation-links > ul { width: 100%; list-style: none; padding: 0; margin-bottom: 0;}
+.navigation-links > ul > li {width: 20%; float: left; position: relative;}
+.navigation-links > ul > li > a {padding: 15px 0; width: 100%; text-align: center; line-height: 20px; color: #bfbfbf;display: block;}
+.navigation-links > ul > li > a + ul {position: absolute; display: none; background-color: #223153; padding: 0; width: 200px; left: 50%; margin-left: -100px; top: 50px; z-index: 14;}
+.navigation-links > ul > li > a + ul > li {display: block; text-align: center;}
+.navigation-links > ul > li > a.active + ul,
+.navigation-links > ul > li > a:hover + ul, 
+.navigation-links > ul > li > a + ul:hover {display: block;}
+.navigation-links > ul > li > a + ul > li,
+.navigation-links > ul > li > a + ul > li > a {}
+.navigation-links > ul > li > a + ul > li > a { color: #7c612a; display: block; padding: 15px;}
 
-.new-navigation-links #toggle-button {position: fixed; right: 5px; top: 5px; z-index: 9;background-color: #7c612a; border-radius: 15px; display: none;}
-.new-navigation-links #toggle-button img {width: 32px; height: 32px; ;}
-.new-navigation-links.fixed {position: fixed; top: 0; z-index: 12;}
-
-
+.navigation-links #toggle-button { z-index: 9;background-color: #7c612a;  padding: 9px; display: none;}
+.navigation-links #toggle-button img {width: 32px; height: 32px;}
+.navigation-links.fixed {position: fixed; top: 0; z-index: 12;}
 
 
 #headers {text-align: center; margin-top: 50px;}
@@ -169,7 +168,7 @@ index page
 #top-div .subtitle {width: 100%; top: 45%;   }
 #top-div .links { top: 70%; }
 
-/*.new-navigation-links { position: absolute; top: 60%; background-color: rgba(6,21,57, .5);}*/
+/*.navigation-links { position: absolute; top: 60%; background-color: rgba(6,21,57, .5);}*/
 
 
 .project-section { padding: 25px; }
@@ -260,15 +259,14 @@ index page
 }
 
 @media screen and (max-width: 639px) {
-	.new-navigation-links > ul > li,
-	.new-navigation-links > ul > li > a + ul{ width: 100%; }
-	.new-navigation-links > ul > li > a + ul {left: 0; margin-left: 0; position: relative; top: 0;}
+	.navigation-links > ul > li,
+	.navigation-links > ul > li > a + ul{ width: 100%; }
+	.navigation-links > ul > li > a + ul {left: 0; margin-left: 0; position: relative; top: 0;}
 
-	.new-navigation-links.autohide ul {display: none}
-	.new-navigation-links.autohide #toggle-button {display: block;}
-
+	.navigation-links ul{}
+	.navigation-links.autohide ul {display: none}
+	.navigation-links #toggle-button { display: block;cursor:pointer }
 }
-
 
 @media screen and (max-width: 480px) {
 	h1,
@@ -278,7 +276,5 @@ index page
 	.col-xxs-6 {width: 50%;}
 	.col-xxs-12 {width: 100%;}
 	.col-xxs-offset-3 {margin-left: 25%;}
-
-
 }
 

@@ -63,12 +63,12 @@ $(document).ready(function() {
 		changeRadioButton($(this).attr('id'))
 	});
 
-	var navbarHeight = $('#top-div .new-navigation-links').outerHeight();
+	var navbarHeight = $('#top-div .navigation-links').outerHeight();
 	$(window).scroll(function() {
 		if ($(window).scrollTop() > navbarHeight) {
-			$("#top-div .new-navigation-links").addClass("fixed");
+			$("#top-div .navigation-links").addClass("fixed");
 		} else {
-			$("#top-div .new-navigation-links").removeClass("fixed");
+			$("#top-div .navigation-links").removeClass("fixed");
 		}
 	});
 
@@ -87,14 +87,10 @@ $(document).ready(function() {
 	
 
 	$("#toggle-button").click(function() {
-		$("new-navigation-links").removeClass("autohide");
+		$(".navigation-links").toggleClass("autohide");
 	});
 
-	$("body").click(function() {
-		$("new-navigation-links").addClass("autohide");
-	});
-
-	$(".new-navigation-links > ul > li > a").click(function(e) {
+	$(".navigation-links > ul > li > a").click(function(e) {
 		var subList = $(this).siblings()[0];
 		if (subList.css("display") != "block") {
 			if ($subList.hasClass("active")) {
