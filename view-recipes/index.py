@@ -146,7 +146,7 @@ def getRecipeLabelHTML(index):
 def displaySearch(searchString):
 	print("""
 <h2 class="large-margin-top" id="search-header">New Recipe Search</h2>
-<form role="form" method="post" action="view-recipes.py" id="recipe-search-form">
+<form role="form" method="post" action="index.py" id="recipe-search-form">
 	<ul id="ingredient-tabs" class="nav nav-tabs nav-justified" role="tablist">
 		<li role="presentation" class="active">
 			<a href="#ingredients" aria-controls="ingredients" role="tab" data-toggle="tab">Ingredients</a>
@@ -1023,25 +1023,6 @@ try:
 	# print header and link to github
 	print("""
 <link href="/assets/css/view-recipes.css" rel="stylesheet">
-<style>body {background: #edf0f8;}</style>
-<div class="row">
-	<div class="col-xxs-6 col-xxs-offset-3 col-xs-4 col-sm-3 col-md-2 col-lg-1">
-		<img class="img-responsive" alt="View Recipes Icon" src="/assets/img/view-recipes/icon.png">
-	</div>
-	<div class="col-xxs-12 col-xs-8 col-sm-9 col-md-10 col-lg-11">
-		<h1>View Recipes</h1>
-		<div class="subheader">Search for, filter, and transform recipes.</div>
-		<h4>Download program: <a target="_blank" href="https://bitbucket.org/kbrohkahn/recipe-parser">Bitbucket</a></h4>
-		<h4>View source: <a target="_blank" href="https://bitbucket.org/kbrohkahn/recipe-parser">Bitbucket</a></h4>
-
-	</div>
-</div>
-
-
-
-
-
-
 <div id="headers">
 	<div class="title">
 		<h1>View Recipes</h1>
@@ -1050,10 +1031,10 @@ try:
 		<h4>Search for, filter, and transform recipes</h4>
 	</div>
 	<div class="logo">
-		<img class="img-responsive" alt="View Recipes Icon" src="/assets/img/view_recipes/icon.png">
+		<img class="img-responsive" alt="View Recipes Icon" src="/assets/img/view-recipes/icon.png">
 	</div>
 	<div class="links">
-		<a href="http://kevin.broh-kahn.com/view-recipes#search-header">Browse</a>
+		<a href="http://kevin.broh-kahn.com/view-recipes#search-header"><h4>Browse</h4></a>
 	</div>
 </div>
 
@@ -1069,15 +1050,17 @@ try:
 <div class="links" id="bottom-links">
 	<h4>Browse now</h4>
 	<div class="badge-container">
-		<a href="http://kevin.broh-kahn.com/view-recipes#search-header">http://kevin.broh-kahn.com/view-recipes#search-header</a>
+		<a href="http://kevin.broh-kahn.com/view-recipes#search-header">
+			<img alt="Browse on kevin.broh-kahn.com" src="/assets/img/kevin.broh-kahn.com/icon.png">
+		</a>
 	</div>
 
 	<h4>View source</h4>
 	<div class="badge-container">
-		<a target="_blank" href="https://bitbucket.org/kbrohkahn/view-recipes">
+		<a target="_blank" href="https://bitbucket.org/kbrohkahn/recipe-parser">
 			<img alt="View on Bitbucket" src="/assets/img/social-links/bitbucket_rgb_slate_45px.png">
 		</a>
-		<a target="_blank" href="https://github.com/kbrohkahn/view-recipes">
+		<a target="_blank" href="https://github.com/kbrohkahn/recipe-parser">
 			<img alt="View on Github" src="/assets/img/social-links/GitHub_Logo_45px.png">
 		</a>
 	</div>

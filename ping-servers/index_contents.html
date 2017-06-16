@@ -3,7 +3,7 @@
 		<img class="img-responsive" alt="Ping Servers Graphic" src="/assets/img/ping-servers/feature_graphic.png">
 	</div>
 	<div class="title">
-		<h1>Ping Servers </h1>
+		<h1>Ping Servers</h1>
 	</div>
 	<div class="subtitle">
 		<h4>Receive instant notifications when websites or servers are unreachable</h4>
@@ -12,14 +12,14 @@
 		<img class="img-responsive" alt="Ping Servers Icon" src="/assets/img/ping-servers/icon.png">
 	</div>
 	<div class="links">
-		<a href="https://play.google.com/store/apps/details?id=com.play2think.ping-servers">Download now</a>
+		<a target="_blank" href="https://play.google.com/store/apps/details?id=com.brohkahn.pingserver"><h4>Download now</h4></a>
 	</div>
 </div>
 
 <div id="description">
 	<div class="row description-group">
 		<div class="col-sm-8 col-sm-offset-2">
-			<p>Ping Server is a mobile application that periodically "pings" servers to determine whether they are reachable by your device. Whenever a ping fails, you will be notified instantly on your device so you can act upon the situation as you see fit! Forget worrying about whether your site is online, just set up a ping on Ping Server and let your Android device do your worrying for you.</p>
+			<p>Ping Servers is a mobile application that periodically "pings" servers to determine whether they are reachable by your device. Whenever a ping fails, you will be notified instantly on your device so you can act upon the situation as you see fit! Forget worrying about whether your site is online, just set up a ping on Ping Server and let your Android device do your worrying for you.</p>
 		</div>
 	</div>
 	<div class="row description-group">
@@ -29,13 +29,48 @@
 			</div>
 		</div>
 		<div class="col-sm-8">
+			<h2>SCHEDULES</h2>
+			<p>Choose between a variety of settings to use for pinging your servers. Using Android's built in scheduler, Ping Servers can automatically query your servers whenever the device wakes up after the provided ping interval. If your device is on a later version of Android (6.0+), you can tell Ping Servers to "use strict alarms", which will turn off battery optimazion for the applciation and force the device to wake up and check your servers at the frequency of your choosing. You can also disable Ping Servers at certains times of the day, so you can prevent your phone from blaring at work or while you're sleeping.</p>
+		</div>
+	</div>
+
+	<div class="row description-group">
+		<div class="col-sm-8">
+			<h2>PING FUNCTIONALITY</h2>
+			<p>We have implemented 2 differents methods of making sure your servers are up and running: <i>URL.openConnection()</i> and <i>InetAddress.getByName()</i>. Ping Servers requires both of these functions to succeed, or the ping will fail. If a ping fails, the service will automatically retry the ping after a given interval. By default, the service will run 3 retries at intervals of 1 second. If the app if unable to ping any of your servers after the given number of retires, you will instantly get a notification. </p>
+		</div>
+		<div class="col-sm-4">
+			<div class="android-mobile-screenshot screenshot">
+				<img src="/assets/img/ping-servers/screenshots/2.jpg" alt="Screenshot 2">
+			</div>
+		</div>
+	</div>
+
+	<div class="row description-group">
+		<div class="col-sm-4">
+			<div class="android-mobile-screenshot screenshot">
+				<img src="/assets/img/ping-servers/screenshots/3.jpg" alt="Screenshot 3">
+			</div>
+		</div>
+		<div class="col-sm-8">
 			<h2>OPTIONS</h2>
 			<p>Every one of Omega's features/elements is completely optional and can be modified to your liking, here is what you can do to each element individually</p>
 			<ul>
 				<li>Server timeout in seconds</li>
-				<li>Ping frequency in minutes (note: this is not 100% accurate as different devices monitor background activities in their own manner, sometimes delaying background executions. If your ping schedule is not accurate according to the frequency you selected, change the frequency by about 20%.)</li>
+				<li>Ping frequency in minutes
+					<ul>
+						<li>This is not 100% accurate as different devices monitor background activities in their own manner, sometimes delaying background executions</li>
+						<li>If your ping schedule is not accurate according to the frequency you selected, change the frequency by about 20%</li>
+					</ul>
+				</li>
 				<li>Retries before failure notification</li>
 				<li>Delay before each retry (in seconds) if server is reachable</li>
+				<li>Ability to notify of subsequent failures
+					<ul>
+						<li>Ping Servers will only send you one notification per fail event</li>
+						<li>If a server continues to stay down, Ping Servers will not notify you</li>
+					</ul>
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -49,9 +84,9 @@
 </div>
 
 <div class="links" id="bottom-links">
-	<h4>Download RSS Wallpaper for free (Android)</h4>
+	<h4>Download Ping Servers for free (Android)</h4>
 	<div class="badge-container">
-		<a target="_blank" href="https://play.google.com/store/apps/details?id=com.brohkahn.rsswallpaper">
+		<a target="_blank" href="https://play.google.com/store/apps/details?id=com.brohkahn.pingserver">
 			<img alt="Get it on Google Play" src="/assets/img/en_generic_rgb_wo_45.png" />
 		</a>
 

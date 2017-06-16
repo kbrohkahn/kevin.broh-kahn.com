@@ -19,7 +19,7 @@
 */
 
 html {background: white}
-body {background: linear-gradient(#b6c3e2, #fff);}
+body {background-color: #edf0f8;}
 div, ul, li, a {box-sizing: border-box;}
 img {max-width: 100%;}
 
@@ -53,7 +53,8 @@ a:visited,
 a:link {font-family: verdana, sans-serif;}
 a,
 a:visited,
-a:link {color: #997c40;}
+a:link,
+a h4 {color: #997c40; font-weight: bold;}
 
 
 
@@ -111,7 +112,7 @@ p {line-height: 1.4em; margin-bottom: 1em}
 .navigation-links.fixed {position: fixed; top: 0; z-index: 12;}
 
 
-#headers {text-align: center; margin-top: 50px;}
+#headers {text-align: center; padding-top: 50px;}
 #headers #feature-graphic,
 #headers #feature-graphic img {width: 100%;}
 #headers .title {margin: 100px 0 15px;}
@@ -134,11 +135,11 @@ p {line-height: 1.4em; margin-bottom: 1em}
 #description .screenshot {margin: 0 auto;position: relative;}
 #description .screenshot img {position: absolute;}
 
-#description .screenshot.android-wear-screenshot {background: url("../img/android-wear-background.png"); width: 250px; height: 350px; }
-#description .screenshot.android-wear-screenshot img { width: 230px; height: 230px; top: 60px; left: 10px;}
+#description .screenshot.android-wear-screenshot {background-image:  url("../img/android-wear-background.png"); width: 230px; height: 322px; }
+#description .screenshot.android-wear-screenshot img { width: 210px; height: 210px; top: 57px; left: 10px;}
 
-#description .screenshot.android-mobile-screenshot {background: url("../img/android-pixel-background.png"); width: 250px; height: 505px; }
-#description .screenshot.android-mobile-screenshot img { width: 224px; height: 398px; top: 50px; left: 12px;}
+#description .screenshot.android-mobile-screenshot {background-image: url("../img/android-pixel-background.png"); width: 230px; height: 465px; }
+#description .screenshot.android-mobile-screenshot img { width: 206px; height: 367px; top: 46px; left: 11px;}
 
 
 #bottom-links {margin: 75px auto 50px; text-align: center;}
