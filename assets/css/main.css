@@ -101,7 +101,10 @@ p {line-height: 1.4em; margin-bottom: 1em}
 .navigation-links > ul > li > a + ul {position: absolute; display: none; background-color: #223153; padding: 0; width: 200px; left: 50%; margin-left: -100px; top: 50px; z-index: 14;}
 .navigation-links > ul > li > a + ul > li {display: block; text-align: center;}
 .navigation-links > ul > li > a.active + ul,
+.navigation-links.hoverable > ul > li > a + ul:hover {display: block;}
 .navigation-links.hoverable > ul > li > a:hover + ul {display: block;}
+
+
 .navigation-links > ul > li > a + ul > li,
 .navigation-links > ul > li > a + ul > li > a {}
 .navigation-links > ul > li > a + ul > li > a { color: #7c612a; display: block; padding: 15px;}
@@ -110,6 +113,7 @@ p {line-height: 1.4em; margin-bottom: 1em}
 .navigation-links #toggle-button img {width: 32px; height: 32px;}
 .navigation-links.fixed {position: fixed; top: 0; z-index: 12;}
 
+.navigation-links.hoverable .subsection-link { display: none; }
 .navigation-links.hoverable .mobile-header { display: none; }
 .navigation-links ul {display: block;}
 .navigation-links.autohide ul {display: none; }
@@ -130,7 +134,7 @@ p {line-height: 1.4em; margin-bottom: 1em}
 
 #description {}
 #description h2 {margin-top: 0;}
-#description .description-group {margin: 15px auto 85px;}
+#description .description-group {margin-top: 15px; margin-bottom: 85px;}
 #description .description-group h2 {text-transform: uppercase;}
 #description .description-group p {text-indent: 50px; margin-bottom: 15px;}
 #description .description-group p,
@@ -163,8 +167,7 @@ p {line-height: 1.4em; margin-bottom: 1em}
 /*
 index page
 */
-
-#top-background {background: linear-gradient(#b6c3e2, #fff);height: 100vh; position: fixed;}
+#top-background {height: 100vh; position: fixed;}
 #top-div {position: relative; height: 100vh;}
 #top-div div {position: absolute; text-align: center}
 #top-div .logo { top: 25%; left: 50%; margin-left: -100px; margin-top: -100px; z-index: 11;}
@@ -258,6 +261,8 @@ index page
 	.navigation-links > ul > li,
 	.navigation-links > ul > li > a + ul{ width: 100%; }
 	.navigation-links > ul > li > a + ul {left: 0; margin-left: 0; position: relative; top: 0;}
+
+	/*#headers {text-align: center; padding-top: 250px;}*/
 }
 
 @media screen and (min-width: 640px) and (max-width: 767px) {

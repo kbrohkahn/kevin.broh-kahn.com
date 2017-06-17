@@ -1023,6 +1023,7 @@ try:
 	# print header and link to github
 	print("""
 <link href="/assets/css/view-recipes.css" rel="stylesheet">
+<script src="/assets/js/view-recipes.js" type="text/javascript"></script>
 <div id="headers">
 	<div class="title">
 		<h1>View Recipes</h1>
@@ -1038,7 +1039,7 @@ try:
 	</div>
 </div>
 
-<div id="description">
+<div id="description" class="container-fluid">
 	<div class="row description-group">
 		<div class="col-sm-8 col-sm-offset-2">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et eros et nisl venenatis sollicitudin. Phasellus dictum eros at elit tempus consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique dignissim bibendum. Aliquam sed imperdiet nisi. Mauris sed mi non eros viverra cursus. Aliquam erat volutpat. In hac habitasse platea dictumst. Proin laoreet erat purus, sed elementum mauris aliquam nec. Quisque in velit congue, bibendum erat vel, facilisis velit. Fusce sodales neque libero. Nunc justo ipsum, faucibus et elementum in, laoreet in eros. Donec vel tellus et neque elementum ultricies.</p>
