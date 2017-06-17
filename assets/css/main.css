@@ -19,7 +19,8 @@
 */
 
 html {background: white}
-body {background-color: #edf0f8;}
+body {background-color: transparent;}
+/*body {background-color: #edf0f8;}*/
 div, ul, li, a {box-sizing: border-box;}
 img {max-width: 100%;}
 
@@ -102,12 +103,12 @@ p {line-height: 1.4em; margin-bottom: 1em}
 .navigation-links #mobile-header,
 .navigation-links {background-color: #061539; width: 100%;	}
 .navigation-links > ul { width: 100%; list-style: none; padding: 0; margin-bottom: 0;}
-.navigation-links > ul > li {width: 20%; float: left; position: relative;}
+.navigation-links > ul > li {width: 16.666666%; float: left; position: relative;}
 .navigation-links > ul > li > a {padding: 15px 0; width: 100%; text-align: center; line-height: 20px; color: #bfbfbf;display: block;}
 .navigation-links > ul > li > a + ul {position: absolute; display: none; background-color: #223153; padding: 0; width: 200px; left: 50%; margin-left: -100px; top: 50px; z-index: 14;}
 .navigation-links > ul > li > a + ul > li {display: block; text-align: center;}
 .navigation-links > ul > li > a.active + ul,
-.navigation-links.hoverable > ul > li > a + ul:hover {display: block;}
+.navigation-links.hoverable > ul > li > a + ul:hover {display: block; }
 .navigation-links.hoverable > ul > li > a:hover + ul {display: block;}
 
 
@@ -133,9 +134,13 @@ p {line-height: 1.4em; margin-bottom: 1em}
 #headers .title {margin: 50px 0 15px;}
 #headers .subtitle {margin: 15px;}
 #headers .links {margin: 15px 0 100px;}
+#headers .links ul { list-style: none; padding: 25px 0;}
+#headers .links ul li { display: inline-block; margin: 15px; }
 #headers .logo { margin: 50px 0; }
 #headers .logo img { margin: 0 auto; max-height: 256px; max-width: 256px;}
 
+#contact .subtitle {padding-top: 25px;}
+#contact {background-color: rgba(6, 21, 57, .3);}
 
 
 #description {}
@@ -213,7 +218,6 @@ index page
 .project.notro {background-color: rgba(25,120,201, .3); border-color: rgba(25,120,201, 1)}
 .project.alenoi {background-color: rgba(129,102,0, .3); border-color: rgba(129,102,0, 1)}
 .project.charging-wear {background-color: rgba(6,21,57, .3); border-color: rgba(6,21,57, 1)}
-
 
 
 

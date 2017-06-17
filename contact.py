@@ -8,10 +8,19 @@ with open("templates/navbar.html", "r") as navbar:
 print('<link href="/assets/css/circuit-background.css" rel="stylesheet">')
 
 print("""
-<div id="circuit-background">
-	<div id="circuit-background-cover">
-		<div class="navigation-links">
-			<h4 class="center">Get in Touch</h4>
+<div id="circuit-background"></div>
+
+<div id="headers">
+	<div class="logo" id="top-logo" href="/contact">
+		<img alt="My logo" src="/assets/img/logo.png">
+	</div>
+
+	<div id="contact">
+		<div class="subtitle">
+			<h3>Get in Touch</h3>
+		</div>
+
+		<div class="links">
 			<ul class="social-links">
 				<li><a title="View my LinkedIn Profile" href="https://www.linkedin.com/in/kbrohkahn" target="_blank"><img src="/assets/img/social/LinkedIn-Icon.png"></a></li>
 				<li><a title="View my Stack Overflow Profile" href="http://stackoverflow.com/cv/kbrohkahn" target="_blank"><img src="/assets/img/social/Stack-Overflow-Icon.png"></a></li>
@@ -25,10 +34,10 @@ print("""
 			</ul>
 		</div>
 	</div>
-</div>
-""")
 
-print('<script src="/assets/js/circuit-background-script.js" type="text/javascript"></script>')
+</div>
+<script src="/assets/js/circuit-background-script.js" type="text/javascript"></script>
+""")
 
 with open("templates/footer.html", "r") as footer:
 	print footer.read()
