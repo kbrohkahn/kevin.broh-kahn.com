@@ -25,6 +25,7 @@ print("""
 				<li><a title="View my LinkedIn Profile" href="https://www.linkedin.com/in/kbrohkahn" target="_blank"><img src="/assets/img/social/LinkedIn-Icon.png"></a></li>
 				<li><a title="View my Stack Overflow Profile" href="http://stackoverflow.com/cv/kbrohkahn" target="_blank"><img src="/assets/img/social/Stack-Overflow-Icon.png"></a></li>
 				<li><a title="View my Bitbucket Profile" href="https://bitbucket.org/kbrohkahn/" target="_blank"><img src="/assets/img/social/Bitbucket-Icon.png"></a></li>
+				<li><a title="View my GitHub Profile" href="https://github.com/kbrohkahn/" target="_blank"><img src="/assets/img/social/GitHub-Icon.png"></a></li>
 				<li><a title="View my apps on the Google Play Store" href="https://play.google.com/store/apps/dev?id=4654453048954028942" target="_blank"><img src="/assets/img/social/Google-Play-Store-Icon.png"></a></li>
 				<li><a title="View my apps on the App Store" href="https://itunes.apple.com/us/developer/kevin-broh-kahn/id1047274120" target="_blank"><img src="/assets/img/social/App-Store-Icon.png"></a></li>
 			</ul>

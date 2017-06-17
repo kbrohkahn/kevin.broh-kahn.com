@@ -135,7 +135,7 @@ p {line-height: 1.4em; margin-bottom: 1em}
 #headers .subtitle {margin: 15px;}
 #headers .links {margin: 15px 0 100px;}
 #headers .links ul { list-style: none; padding: 25px 0;}
-#headers .links ul li { display: inline-block; margin: 15px; }
+#headers .links ul li { display: inline-block; margin: 10px; }
 #headers .logo { margin: 50px 0; }
 #headers .logo img { margin: 0 auto; max-height: 256px; max-width: 256px;}
 
