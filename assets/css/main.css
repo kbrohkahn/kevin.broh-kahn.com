@@ -38,7 +38,8 @@ img {max-width: 100%;}
 /* Fonts and Text Colors */
 #title,
 h1,
-h2 {font-family: "garamond", times, serif; color: #162856; font-weight: bold; ; }
+h2,
+.project .project-subtitle {font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; color: #162856; font-weight: bold; ; }
 h3,
 h4,
 h5,
@@ -54,7 +55,12 @@ a:link {font-family: verdana, sans-serif;}
 a,
 a:visited,
 a:link,
-a h4 {color: #997c40; font-weight: bold;}
+a h1,
+a h2,
+a h3,
+a h4,
+a h5,
+a h6 {color: #997c40; font-weight: bold;}
 
 
 
@@ -124,10 +130,10 @@ p {line-height: 1.4em; margin-bottom: 1em}
 #headers {text-align: center; padding-top: 50px;}
 #headers #feature-graphic,
 #headers #feature-graphic img {width: 100%;}
-#headers .title {margin: 100px 0 15px;}
+#headers .title {margin: 50px 0 15px;}
 #headers .subtitle {margin: 15px;}
 #headers .links {margin: 15px 0 100px;}
-#headers .logo { margin: 15px; }
+#headers .logo { margin: 50px 0; }
 #headers .logo img { margin: 0 auto; max-height: 256px; max-width: 256px;}
 
 
@@ -181,7 +187,7 @@ index page
 
 
 .project-section { padding: 25px; }
-.project-section h2.section-title {margin: 150px 0 100px;}
+.project-section .section-title {margin: 150px 0 100px; text-align: center;}
 
 .project-section#android-wear,
 .project-section#android {background-color: rgba(119, 193, 89, .3);}
@@ -189,11 +195,12 @@ index page
 .project-section#web {background-color: rgba(22,122,188, .3);}
 
 .project { border: solid 3px rgba(0, 0, 0, .5); background-color: rgba(32, 32, 32, .5); text-align: center; margin-bottom: 30px;}
-.project .project-link { padding: 15px; }
-.project .project-link:hover { text-decoration: none;}
+.project .project-link { padding: 15px; display: block; }
+.project a.project-link:hover .project-subtitle{ text-decoration: none;}
 .project .project-icon { width: 200px; height: 200px; margin: 15px auto;}
+.project .project-icon img { max-width: 200px; max-height: 200px; }
 .project .project-title { color: rgba(0, 0, 0, 1); }
-.project .project-subtitle { color: rgba(0, 0, 0, 1);  height: 60px; }
+.project .project-subtitle { height: 60px; padding: 10px; }
 
 .project.ratfink {background-color: rgba(50,138,46, .3); border-color: rgba(50,138,46, 1)}
 .project.music-home {background-color: rgba(45,66,113, .3); border-color: rgba(45,66,113, 1)}
