@@ -146,7 +146,7 @@ def getRecipeLabelHTML(index):
 def displaySearch(searchString):
 	print("""
 <h2 class="large-margin-top" id="search-header">New Recipe Search</h2>
-<form role="form" method="post" action="index.py" id="recipe-search-form">
+<form role="form" method="post" action="index.py#recipe-header" id="recipe-search-form">
 	<ul id="ingredient-tabs" class="nav nav-tabs nav-justified" role="tablist">
 		<li role="presentation" class="active">
 			<a href="#ingredients" aria-controls="ingredients" role="tab" data-toggle="tab">Ingredients</a>
@@ -479,7 +479,7 @@ def displayRecipe(recipe):
 
 	# print recipe, servings, and calories
 	print("""
-<div class="row center">
+<div class="row center" id="recipe-header">
 	<div class="col-xs-12">
 		<h2>{0}</h2>
 		{4}
@@ -1042,8 +1042,8 @@ try:
 <div id="description" class="container-fluid">
 	<div class="row description-group">
 		<div class="col-sm-8 col-sm-offset-2">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et eros et nisl venenatis sollicitudin. Phasellus dictum eros at elit tempus consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique dignissim bibendum. Aliquam sed imperdiet nisi. Mauris sed mi non eros viverra cursus. Aliquam erat volutpat. In hac habitasse platea dictumst. Proin laoreet erat purus, sed elementum mauris aliquam nec. Quisque in velit congue, bibendum erat vel, facilisis velit. Fusce sodales neque libero. Nunc justo ipsum, faucibus et elementum in, laoreet in eros. Donec vel tellus et neque elementum ultricies.</p>
-			<p>Etiam dictum leo dictum bibendum vulputate. Fusce in diam iaculis, accumsan magna vitae, tempus lectus. Cras nisl est, finibus quis feugiat sed, euismod fringilla ex. Vestibulum pulvinar pellentesque varius. Integer porttitor nec ipsum ac sagittis. Donec vitae ex viverra, fringilla diam id, facilisis odio. Nam egestas ante nulla, vel efficitur lacus aliquam eu. Sed pulvinar gravida mauris dignissim porta. Sed a tellus vehicula eros laoreet interdum. Quisque auctor ultrices quam, at interdum elit placerat a.</p>
+			<p>Are you looking for a fun new cake recipe? Need to find a good pasta recipe that doesn't use nuts? Want to make something using what's left in the cupboard? This <i>View Recipes</i> application can assist you with all your needs!</p>1
+			<p>View recipes is a powerful tool built using natural language processing that can search for recipes by recipe name, recipe type, ingredient, or ingredient type. You can select ingredients or ingredient types to include/exclude from any recipe you see. Thanks to <a href="http://allrecipes.com/">allrecipes.com</a>, the source of all the recipes and ingredients you see, you can search through thousands of recipes to find something that will fit your liking!</p>
 		</div>
 	</div>
 </div>
