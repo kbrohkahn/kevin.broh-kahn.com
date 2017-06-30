@@ -204,7 +204,7 @@ index page
 .project a.project-link:hover .project-subtitle{ text-decoration: none;}
 .project .project-icon { width: 200px; height: 200px; margin: 15px auto;}
 .project .project-icon img { max-width: 200px; max-height: 200px; }
-.project .project-title { color: rgba(0, 0, 0, 1); }
+.project .project-title { color: rgba(0, 0, 0, 1); height: 52px; vertical-align: middle;}
 .project .project-subtitle { height: 60px; padding: 10px; }
 
 .project.ratfink {background-color: rgba(50,138,46, .3); border-color: rgba(50,138,46, 1)}
